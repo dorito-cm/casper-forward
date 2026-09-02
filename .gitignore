@@ -4,3 +4,6 @@ out/
 .vercel/
 *.log
 .DS_Store
+
+*:Zone.Identifier
+tsconfig.tsbuildinfo
