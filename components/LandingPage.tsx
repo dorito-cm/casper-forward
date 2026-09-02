@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import teamsData from "@/data/teams.json";
 import { eligibility, journey, primaryResources, reasons, secondaryResources, supportAreas } from "@/lib/content";
-import { teamsPathFor } from "@/lib/styles";
+import { applyPathFor, teamsPathFor } from "@/lib/styles";
 import type { StyleKey, Team } from "@/lib/types";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -27,7 +27,7 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
               <h1>Keep <em>Building.</em></h1>
               <p className="heroCopy">Casper Forward helps promising builders move from hackathon prototype to production on Casper — with continued technical, ecosystem and go-to-market support along the way.</p>
               <div className="heroActions">
-                <a className="button buttonPrimary" href="#apply">Apply to Casper Forward <span aria-hidden="true">↗</span></a>
+                <Link className="button buttonPrimary" href={applyPathFor(styleKey)}>Apply to Casper Forward <span aria-hidden="true">↗</span></Link>
                 <a className="button buttonSecondary" href="#program">See how it works <span aria-hidden="true">↓</span></a>
               </div>
             </div>
@@ -109,7 +109,7 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
 
         <section id="apply" className="section ctaSection">
           <div><p className="eyebrow">Casper Forward</p><h2>Built something promising on Casper? Keep going.</h2><p>Tell us what you’re building, where it stands and what would help you reach the next milestone.</p></div>
-          <a className="button ctaButton" href="#top">Apply to Casper Forward <span aria-hidden="true">↗</span></a>
+          <Link className="button ctaButton" href={applyPathFor(styleKey)}>Apply to Casper Forward <span aria-hidden="true">↗</span></Link>
         </section>
       </main>
       <Footer styleKey={styleKey} />

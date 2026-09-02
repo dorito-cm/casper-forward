@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { navItems } from "@/lib/content";
-import { basePathFor, teamsPathFor } from "@/lib/styles";
+import { applyPathFor, basePathFor, teamsPathFor } from "@/lib/styles";
 import type { StyleKey } from "@/lib/types";
 
 export function Header({ styleKey }: { styleKey: StyleKey }) {
@@ -37,7 +37,7 @@ export function Header({ styleKey }: { styleKey: StyleKey }) {
             <Link key={item.label} href={resolveHref(item.href)} onClick={() => setOpen(false)}>{item.label}</Link>
           ))}
         </nav>
-        <a className="button buttonPrimary navApply" href={`${basePath || "/"}#apply`}>Apply <span aria-hidden="true">↗</span></a>
+        <Link className="button buttonPrimary navApply" href={applyPathFor(styleKey)}>Apply <span aria-hidden="true">↗</span></Link>
       </div>
     </header>
   );

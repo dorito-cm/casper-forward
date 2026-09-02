@@ -14,3 +14,7 @@ export function basePathFor(style: StyleKey) {
 export function teamsPathFor(style: StyleKey) {
   return style === "a" ? "/teams" : `/style-${style}/teams`;
 }
+
+export function applyPathFor(style: StyleKey) {
+  return `/style-${style}/apply`;
+}
