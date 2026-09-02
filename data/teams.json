@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Demo Project Alpha",
+    "slug": "demo-project-alpha",
+    "logo": "/teams/demo-project-alpha/logo.svg",
+    "description": "Placeholder project profile demonstrating the public team-card layout.",
+    "status": "BUILDING",
+    "latestMilestone": "Demo milestone — replace before launch",
+    "website": "linkhere",
+    "github": "github here",
+    "x": "X here",
+    "featured": true
+  },
+  {
+    "name": "Demo Project Beta",
+    "slug": "demo-project-beta",
+    "logo": "/teams/demo-project-beta/logo.svg",
+    "description": "Placeholder project profile demonstrating the public team-card layout.",
+    "status": "TESTNET",
+    "latestMilestone": "Demo milestone — replace before launch",
+    "website": "",
+    "github": "",
+    "x": "",
+    "featured": true
+  },
+  {
+    "name": "Demo Project Gamma",
+    "slug": "demo-project-gamma",
+    "logo": "/teams/demo-project-gamma/logo.svg",
+    "description": "Placeholder project profile demonstrating the public team-card layout.",
+    "status": "MAINNET PREP",
+    "latestMilestone": "Demo milestone — replace before launch",
+    "website": "",
+    "github": "",
+    "x": "",
+    "featured": true
+  },
+  {
+    "name": "Demo Project Delta",
+    "slug": "demo-project-delta",
+    "logo": "/teams/demo-project-delta/logo.svg",
+    "description": "Placeholder project profile demonstrating the public team-card layout.",
+    "status": "LIVE",
+    "latestMilestone": "Demo milestone — replace before launch",
+    "website": "",
+    "github": "",
+    "x": "",
+    "featured": false
+  }
+]

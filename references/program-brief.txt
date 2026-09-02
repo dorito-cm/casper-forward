@@ -1,0 +1,683 @@
+CASPER FORWARD — PROGRAM BRIEF FOR WEBSITE / CODEX
+=================================================
+
+Purpose
+-------
+Casper Forward is an ongoing continuation path for promising builders who want to move from hackathon prototype to production on Casper.
+
+The program exists because hackathons routinely produce more prototypes than live applications. Teams often lose momentum after an event because of day jobs and competing commitments, unresolved technical blockers, lack of go-to-market planning, and difficulty reaching production users.
+
+Casper Forward is not a rigid, time-boxed accelerator with forced graduation dates. It is an ongoing support path tailored to each project's development pace and readiness.
+
+Core positioning
+----------------
+Keep Building.
+
+Casper Forward should feel like the place serious Casper builders go after a hackathon when they intend to continue building.
+
+The program should emphasize:
+- continuation after the hackathon
+- clearing technical and product blockers
+- helping teams move toward Mainnet
+- technical, ecosystem and go-to-market support
+- ongoing support after launch
+
+It should NOT feel like:
+- a grants portal
+- a generic accelerator
+- a one-week marketing campaign
+- a hackathon microsite
+
+Program entry
+-------------
+Builders can discover Casper Forward through:
+- the program landing page
+- direct email outreach
+- Casper social channels
+- newsletters
+- developer communities
+- ecosystem referrals
+
+Application should capture:
+- project status
+- team information
+- product/development stage
+- technical needs
+- goals for continuing on Casper
+
+Selected teams are onboarded into a private program workspace and aligned around their next useful milestone before active support begins.
+
+Eligibility
+-----------
+The initial target group may include:
+- Buildathon finalists
+- selected Buildathon participants with strong long-term potential
+- previous Casper hackathon teams that remain actively building
+- other builders with a functional Casper Testnet MVP and a credible path for continued development
+
+Important selection qualities:
+- meaningful technical progress
+- clear intent to continue building on Casper
+- a realistic next milestone
+- active engagement with the project
+- readiness to meet open-source expectations
+
+On-chain project identity
+-------------------------
+Casper Forward may encourage participating teams to use native Casper identity infrastructure.
+
+Potential elements:
+- CSPR.name project identity
+- CSPR subnames
+- project/account identification through CSPR.live using the Casper Account Info Standard
+
+Do not publicly promise exact free allocations unless they are explicitly confirmed for launch.
+
+Marketing and GTM support
+-------------------------
+Marketing and go-to-market support should be integrated into the program rather than treated as a standalone promotional benefit.
+
+Potential support includes:
+
+Build in Public
+- development updates
+- technical milestones
+- short-form social content
+- builder diaries
+- product demos
+- community teasers
+- ecosystem showcase content
+
+Builder Showcases
+- periodic X Spaces
+- product demonstrations
+- technical discussions
+- community Q&A
+
+Editorial Spotlights
+- Casper Blog features
+- founder interviews
+- newsletter coverage
+- official social-channel amplification
+
+Launch support
+- coordinated visibility when a team reaches Mainnet
+- launch sequencing and timing
+- positioning help
+- copy and asset review
+- launch messaging support
+
+Ecosystem support
+-----------------
+Casper Forward should help builders form useful relationships across the ecosystem while products are still being developed.
+
+Connections should be targeted and based on concrete needs rather than generic networking.
+
+Examples:
+- introductions to other Casper builders
+- introductions to wallets and explorers
+- infrastructure providers
+- developer tooling teams
+- integration partners
+- complementary dApps
+- shared testing opportunities
+- joint demos
+- co-marketing opportunities
+- relevant enterprise conversations where appropriate
+
+Infrastructure and developer resources
+--------------------------------------
+Participating teams should be connected with relevant resources required for production development.
+
+Potential areas:
+- developer tooling
+- RPC access
+- indexing
+- testing infrastructure
+- coordination with Engineering
+- infrastructure-provider introductions
+- partner offers or credits where available
+
+Do not publicly promise specific partner benefits, discounts, credits, or services unless confirmed.
+
+Open-source readiness
+---------------------
+Projects should receive guidance on making their repositories and development practices consistent with the program's open-source expectations.
+
+Technical enablement and security
+---------------------------------
+Technical support may include:
+
+Technical & Architecture
+- Casper architecture guidance
+- protocol alignment
+- Rust smart-contract practices
+- Odra framework guidance
+- integration guidance
+- production-path support
+
+AI Tooling
+- Casper AI Toolkit
+- MCP servers
+- x402 payment flows
+- related developer tooling
+
+Security & Mainnet Readiness
+- code hygiene
+- security screening
+- audit preparation
+- infrastructure testing
+- deployment readiness
+
+Infrastructure & Tooling
+- RPC access
+- indexer access
+- testing support
+- production dependencies
+
+Workshops
+---------
+The program may include practical technical and GTM workshops focused on recurring issues teams encounter while moving toward production.
+
+Program Workspace
+-----------------
+Participating teams should have a private Telegram or Discord workspace.
+
+Its purpose:
+- day-to-day coordination
+- first-line support
+- progress updates
+- blocker identification
+- escalation of technical questions
+- keeping teams connected between milestones
+
+Proactive builder follow-up
+---------------------------
+Support should not depend only on teams asking for help.
+
+The program should periodically check in with participating teams to:
+- understand current progress
+- identify blockers
+- surface new needs
+- coordinate relevant support
+- keep projects connected to the program
+
+This internal follow-up process should not be exposed as a public CRM or internal tracker on the website.
+
+Grants and incentives
+---------------------
+Casper Forward is NOT primarily a direct cash-grant program.
+
+Program value is intended to come mainly from:
+- technical support
+- security and audit-readiness support
+- infrastructure access
+- GTM and marketing support
+- ecosystem introductions
+- continued builder support
+
+Potential x402 credits or follow-on funding may exist separately, but should not be presented as guaranteed public benefits unless formally confirmed.
+
+FULL INTERNAL BUILDER JOURNEY — SOURCE OF TRUTH
+===============================================
+
+The original Notion Builder Journey is a seven-stage internal program journey.
+This section is intentionally preserved in full because the original Markdown table formatting can break when exported.
+
+Each stage has four fields:
+1. Stage
+2. Builder Action / Entry Point
+3. Builder Experience
+4. Casper Internal Support
+
+Stage 1 — Discovery & Application
+---------------------------------
+Builder Action / Entry Point:
+Reach the Casper Forward landing page through direct email, newsletter, social channels, developer communities, or ecosystem referral. Submit the short application form.
+
+Builder Experience:
+Share project status, team information, development stage, technical needs, and goals for continuing on Casper.
+
+Casper Internal Support:
+Growth reviews the application and coordinates with Engineering where technical assessment is needed.
+
+Stage 2 — Onboarding
+--------------------
+Builder Action / Entry Point:
+Selected team completes roadmap alignment and joins the private Discord/TG workspace.
+
+Builder Experience:
+Define immediate goals, key blockers, integration needs, and intended Mainnet path. If the optional CSPR.name allocation is adopted, the team can claim and manage its project namespace during onboarding.
+
+Casper Internal Support:
+Growth establishes the project support plan; Engineering input is added where needed; relevant ecosystem introductions are identified.
+
+Stage 3 — Development
+---------------------
+Builder Action / Entry Point:
+Continue building against the agreed roadmap and surface blockers through the dedicated workspace.
+
+Builder Experience:
+Refine the codebase, participate in relevant workshops or office hours, and share meaningful milestones for build-in-public content.
+
+Casper Internal Support:
+Engineering guidance, GTM support, targeted ecosystem introductions, selective Builder Showcase opportunities, and periodic direct check-ins to review progress and surface new support needs.
+
+Stage 4 — Periodic Follow-Ups
+-----------------------------
+Builder Action / Entry Point:
+Continue building and share project progress.
+
+Builder Experience:
+Regular one-on-one check-ins focused on development progress and current challenges.
+
+Casper Internal Support:
+Dorito maintains ongoing contact, helps remove blockers, coordinates internal support, and facilitates relevant ecosystem introductions.
+
+IMPORTANT:
+This stage is a distinct row in the original Notion journey. It is not merely a note attached to Development.
+
+Stage 5 — Security & Audit
+--------------------------
+Builder Action / Entry Point:
+Signal production readiness and submit final contract logic for review preparation.
+
+Builder Experience:
+Finalize contracts, address security findings, prepare for audit, and complete infrastructure testing.
+
+Casper Internal Support:
+Code screening, audit preparation support, infrastructure provisioning, and deployment guidance.
+
+Stage 6 — Mainnet Launch
+------------------------
+Builder Action / Entry Point:
+Confirm launch date with Casper teams once production deployment is ready.
+
+Builder Experience:
+Deploy production contracts to Mainnet and launch publicly.
+
+Casper Internal Support:
+Coordinated launch campaign, editorial coverage, social distribution, ecosystem amplification, and partner support where relevant.
+
+Stage 7 — Post-Launch
+---------------------
+Builder Action / Entry Point:
+Share product performance, adoption signals, new blockers, and partnership needs.
+
+Builder Experience:
+Maintain the live product, onboard users, iterate, and continue shipping.
+
+Casper Internal Support:
+Case studies, enterprise and ecosystem introductions, follow-on visibility, periodic progress check-ins, and potential funding evaluation for exceptional projects.
+
+PUBLIC WEBSITE JOURNEY
+======================
+
+The public landing page should NOT reproduce the full internal seven-stage table verbatim.
+
+Use a simplified five-stage public journey that communicates the same lifecycle clearly without exposing internal operating details.
+
+01 Apply
+Tell us what you've built, where the project stands and what you need next.
+
+02 Align
+Define the next milestone, current blockers and a realistic path forward.
+
+03 Build
+Keep developing with access to relevant technical, ecosystem and GTM support.
+
+04 Prepare
+Work through security, infrastructure and Mainnet readiness.
+
+05 Launch & Grow
+Deploy when ready, reach users and stay connected as the product evolves.
+
+Mapping from internal journey to public journey:
+- Discovery & Application -> Apply
+- Onboarding -> Align
+- Development + Periodic Follow-Ups -> Build
+- Security & Audit -> Prepare
+- Mainnet Launch + Post-Launch -> Launch & Grow
+
+The public journey should visually communicate progression without implying:
+- fixed cohort dates
+- fixed time spent per stage
+- forced graduation
+- identical paths for every team
+
+Program tracking and impact
+---------------------------
+The original Notion program defines four primary impact indicators.
+
+1. Production Deployments
+Number of participating projects successfully executing live smart contracts on Casper Mainnet.
+
+Purpose:
+This is the clearest measure of whether the program is converting prototypes into production applications.
+
+2. Ecosystem Partnerships
+Formal integrations, wallet support, enterprise POCs, and cross-dApp collaborations established through program introductions.
+
+Purpose:
+Measures whether Casper Forward is creating useful ecosystem connectivity rather than isolated projects.
+
+3. Builder Retention
+Active development activity, code commits, repository updates, and product maintenance tracked at 6 and 12 months.
+
+Purpose:
+Indicates whether teams remain meaningfully engaged after the initial program support period.
+
+4. Community & Market Engagement
+Audience reach, X Spaces participation, blog reads, newsletter performance, product usage signals, and launch campaign engagement.
+
+Purpose:
+Shows whether projects are beginning to reach users beyond the builder team itself.
+
+These indicators are primarily for internal program management and reporting.
+
+The public website may show curated team progress/statuses, but should NOT expose:
+- internal KPI dashboards
+- internal retention tracking
+- private builder activity
+- private reporting cadence
+- internal review ownership
+
+Marketing rollout
+-----------------
+Internal rollout concept:
+
+1. Internal alignment
+- program name, messaging and visual identity
+- eligibility
+- technical support scope
+- landing page
+- application form
+- internal ownership
+- tracking
+
+2. Audience preparation
+- participant database
+- Buildathon participants
+- previous hackathon teams
+- finalists
+- teams already in conversation with Casper
+
+3. Direct builder outreach
+- email campaign
+- recurring reminders because applications remain open
+
+4. Public announcement
+- Casper Blog
+- X
+- LinkedIn
+- newsletter
+- Telegram
+- Discord
+- developer communities
+
+5. Ecosystem amplification
+- Casper ecosystem surfaces
+- developer channels
+- partner communications
+- periodic X Spaces
+
+6. Ongoing communications
+- builder showcases
+- builder diaries
+- technical milestone updates
+- workshops
+- project spotlights
+- Mainnet launch announcements
+- post-launch case studies
+- ecosystem showcase newsletter content
+
+Website-specific content priorities
+-----------------------------------
+The public landing page should focus on the builder experience.
+
+Recommended structure:
+1. Hero
+2. Why Casper Forward
+3. Builder Journey
+4. Program Support
+5. Teams Moving Forward preview
+6. Builder Resources
+7. Eligibility
+8. Final CTA
+
+Suggested navigation:
+- Program
+- Journey
+- Support
+- Teams
+- Resources
+- Eligibility
+- Apply
+
+Hero
+----
+Small label:
+POST-HACKATHON BUILDER PROGRAM
+
+Headline:
+Keep Building.
+
+Main copy:
+Casper Forward helps promising builders move from hackathon prototype to production on Casper — with continued technical, ecosystem and go-to-market support along the way.
+
+Primary CTA:
+Apply to Casper Forward
+
+Secondary CTA:
+See how it works
+
+Secondary statement:
+BUILT FOR CONTINUATION
+
+No forced graduation dates. No one-size-fits-all roadmap. Teams progress around the needs and pace of the product they're actually building.
+
+Why Casper Forward
+------------------
+Headline:
+Hackathons should be a start, not an ending.
+
+Intro:
+A working prototype is only the beginning. Technical blockers, product decisions, infrastructure needs and launch preparation can all slow promising teams down after an event ends. Casper Forward keeps serious builders connected while they work through what comes next.
+
+01 / CONTINUE
+Keep the momentum.
+Stay connected to Casper beyond the event and continue building around your own product timeline.
+
+02 / UNBLOCK
+Clear the next obstacle.
+Surface technical, infrastructure, product or GTM blockers and connect with the right support.
+
+03 / LAUNCH
+Move toward production.
+Turn a promising build into something ready for Mainnet, users and continued development.
+
+Program Support
+---------------
+Headline:
+Support where it actually matters.
+
+Intro:
+Casper Forward brings the right people and resources closer to the problems teams encounter while turning a prototype into a real product.
+
+BUILD
+Technical & Architecture
+Guidance around Casper tooling, integrations, smart contracts and production paths.
+
+SECURE
+Security & Mainnet Readiness
+Code hygiene, audit preparation and deployment-readiness support.
+
+LAUNCH
+GTM & Launch Support
+Positioning, launch planning, content and visibility around meaningful milestones.
+
+CONNECT
+Ecosystem Connections
+Targeted introductions to builders, infrastructure providers and relevant ecosystem partners.
+
+SCALE
+Infrastructure & Tooling
+Support around RPC access, indexing, testing and other production dependencies.
+
+CONTINUE
+Dedicated Builder Support
+A consistent place to surface blockers, share progress and stay connected between milestones.
+
+Support visual
+--------------
+Preserve the existing Casper-style 3D support illustration concept:
+- 2x3 support grid on the left
+- quote and illustration on the right
+- both sides visually balanced in height
+- illustration must not sit behind quote text
+- no large unused vertical space
+- quote/background and artwork should blend into one continuous card
+
+Quote:
+"The goal isn't to rush every prototype to Mainnet. It's to help serious teams keep moving."
+
+Teams Moving Forward
+--------------------
+Homepage should show a small preview only.
+
+Headline:
+Built on Casper. Still building.
+
+Show approximately three featured projects from a shared teams.json file.
+
+Each public project card may include:
+- project logo
+- name
+- one-line description
+- public status
+- latest milestone
+- website
+- GitHub
+- X
+
+Suggested statuses:
+- BUILDING
+- TESTNET
+- MAINNET PREP
+- LIVE
+
+CTA:
+Explore all teams
+
+A dedicated /teams page should show the full public directory.
+
+Do not expose:
+- private contacts
+- internal blocker notes
+- internal follow-up history
+- internal program status
+- CRM data
+
+Builder Resources
+-----------------
+Use four main resource cards:
+
+1. Casper Forward FAQ
+Common program, onboarding and technical questions for participating teams.
+This is intended to be the first line of support for recurring questions.
+URL may remain placeholder until the FAQ exists.
+
+2. Casper Developer Docs
+Official Casper protocol, SDK, smart-contract and development documentation.
+https://docs.casper.network/
+
+3. AI & x402 Tooling
+Casper's AI Toolkit, agent tooling, MCP resources and x402 development material.
+https://www.casper.network/ai
+
+4. Program Workspace
+The support and coordination space for participating Casper Forward teams.
+URL may remain placeholder until the workspace exists.
+
+Secondary links should be visually quieter:
+- CSPR.build — https://cspr.build/
+- Odra — Casper smart-contract framework/tooling
+- CSPR.live — https://cspr.live/
+- CSPR.name — official CSPR.name site
+
+CSPR.cloud and CSPR.click can be included only if they improve usability without cluttering the section.
+
+Eligibility section
+-------------------
+Headline:
+For teams that intend to keep going.
+
+Intro:
+Casper Forward is designed for projects showing meaningful progress and a clear intention to continue building on Casper.
+
+Who is it for?
+- Buildathon finalists.
+- Strong Buildathon teams continuing development.
+- Previous Casper hackathon teams still actively building.
+- Other builders with a functional Casper Testnet MVP.
+
+What matters?
+- Meaningful technical progress.
+- Clear intent to continue building on Casper.
+- A realistic next milestone.
+- Active engagement with the project.
+- Open-source readiness.
+
+Final CTA
+---------
+Headline:
+Built something promising on Casper? Keep going.
+
+Copy:
+Tell us what you're building, where it stands and what would help you reach the next milestone.
+
+Button:
+Apply to Casper Forward
+
+Public-content exclusions
+-------------------------
+Do NOT expose:
+- internal staff ownership assignments
+- private action items
+- internal outreach cadence
+- internal escalation processes
+- internal tracking sheets
+- internal CRM data
+- private blocker reports
+- internal KPIs
+- response-time expectations
+- unresolved internal questions
+- partner negotiations
+- internal funding discussions
+- quantities marked TBD
+- private participant information
+
+Do not add repeated prototype disclaimers such as:
+- subject to internal approval
+- reference concept
+- draft proposal
+- not final
+- program options TBD
+
+The site should read confidently as a real program concept while avoiding unconfirmed promises.
+
+Source-of-truth rule
+--------------------
+Do not invent:
+- program benefits
+- partner benefits
+- funding
+- grants
+- technical support guarantees
+- team participation
+- project statuses
+- milestones
+- integrations
+- eligibility conditions
+
+When implementation requires placeholder content, isolate it clearly and make replacement easy.
