@@ -136,11 +136,90 @@ button { font: inherit; }
 .applicationFormShell { padding: 12px; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #f2f1ef; }
 .applicationFormFrame { display: block; width: 100%; height: 2000px; min-height: 1400px; border: 0; background: #fff; color-scheme: light; }
 
-/* A — slightly tighter editorial pacing after the hero and support feature */
+/* A — Casper editorial, refined toward the current visual system */
+.theme-a {
+  --red: #ff2933;
+  --red-deep: #df1723;
+  --ink: #08090a;
+  --paper: #f4f4f2;
+  --surface: #fff;
+  --surface-2: #e9e9e6;
+  --line: #cfd0cc;
+  --muted: #595d62;
+  --lime: #b6ff00;
+  --lime-deep: #a4e600;
+  --radius: 4px;
+  font-family: var(--font-casper-sans), Arial, sans-serif;
+  font-synthesis: none;
+}
+.theme-a .brand,
+.theme-a .mainNav,
+.theme-a .button,
+.theme-a .pill,
+.theme-a .eyebrow,
+.theme-a .signalRail,
+.theme-a .cardIndex,
+.theme-a .stepNumber,
+.theme-a .supportGrid article > span,
+.theme-a .resourceCard > span,
+.theme-a .status,
+.theme-a .milestone span,
+.theme-a .teamLinks,
+.theme-a .secondaryResources strong,
+.theme-a .filters button,
+.theme-a .footerBrand,
+.theme-a .styleSwitcher,
+.theme-a h3,
+.theme-a strong { font-weight: 500; }
+.theme-a .hero h1,
+.theme-a .directoryHero h1,
+.theme-a .applyIntro h1 { font-weight: 300; line-height: 1; letter-spacing: 0; }
+.theme-a .sectionHeading h2,
+.theme-a .ctaSection h2 { font-weight: 400; line-height: 1.1; letter-spacing: .02em; }
+.theme-a .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
+.theme-a .journeyGrid h3 { letter-spacing: .02em; }
+.theme-a .brandMark { border-radius: 2px; font-weight: 500; }
+.theme-a .button { min-height: 50px; border-radius: 2px; letter-spacing: .01em; }
+.theme-a .buttonPrimary { border-color: var(--lime); background: var(--lime); color: var(--ink); }
+.theme-a .buttonPrimary:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
+.theme-a .buttonSecondary { border-color: var(--ink); background: var(--surface); }
+.theme-a .buttonSecondary:hover { border-color: var(--lime); background: var(--lime); }
+.theme-a .navApply { min-height: 42px; }
+.theme-a .pill { border-radius: 2px; border-color: var(--ink); background: transparent; }
+.theme-a .pill span { border-radius: 0; background: var(--lime); }
+.theme-a .signalRail { border-block: 1px solid var(--ink); }
+.theme-a .signalRail span::before { color: var(--lime); }
+.theme-a .journeySection { background: var(--ink); }
+.theme-a .stepNumber { color: var(--lime); }
+.theme-a .reasonCard,
+.theme-a .resourceCard,
+.theme-a .eligibilityGrid article { border-top: 3px solid var(--red); }
+.theme-a .reasonCard:hover,
+.theme-a .resourceCard:hover { transform: translateY(-2px); box-shadow: none; }
+.theme-a .supportGrid,
+.theme-a .supportVisual,
+.theme-a .reasonCard,
+.theme-a .teamCard,
+.theme-a .resourceCard,
+.theme-a .eligibilityGrid article,
+.theme-a .applicationFormShell { border-radius: var(--radius); }
+.theme-a .teamCard { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.theme-a .teamCard:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--lime); }
+.theme-a .teamLogo { border-radius: 2px; }
+.theme-a .ctaSection { margin-bottom: 88px; border: 1px solid var(--ink); border-radius: 0; }
+.theme-a .ctaButton { border-color: var(--lime); background: var(--lime); color: var(--ink); }
+.theme-a .ctaButton:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
+.theme-a .styleSwitcher { border-radius: 3px; }
+.theme-a .styleSwitcher a { border-radius: 1px; }
+.theme-a .styleSwitcher a.active { background: var(--lime); color: var(--ink); }
+.theme-a .filters { border-color: var(--ink); border-radius: 3px; }
+.theme-a .filters button { border-radius: 2px; }
+.theme-a .filters button.active { background: var(--lime); color: var(--ink); }
+.theme-a .applicationFormShell { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.theme-a :focus-visible { outline-color: var(--lime); }
 .theme-a .teamsSection,
 .theme-a .resourcesSection,
 .theme-a .eligibilitySection { padding-block: clamp(70px, 8vw, 104px); }
-.theme-a .ctaSection { margin-bottom: 88px; }
 .theme-a .directoryHero { padding-block: clamp(82px, 9vw, 124px) 62px; }
 .theme-a .directorySection { padding-bottom: 105px; }
 
@@ -176,6 +255,7 @@ button { font: inherit; }
   .supportLayout, .theme-b .supportLayout, .theme-d .supportLayout { grid-template-columns: 1fr; }.supportVisual { min-height: 680px; }.theme-d .supportGrid { border-right: 0; border-bottom: 1px solid var(--ink); }
   .resourceGrid { grid-template-columns: repeat(2, 1fr); }.resourceCard { min-height: 230px; }.teamGrid, .directoryGrid { grid-template-columns: repeat(2, 1fr); }
   .theme-d .teamCard:nth-child(2), .theme-d .resourceCard:nth-child(2) { border-right: 0; }.theme-d .resourceCard:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
+  .theme-a .mainNav { border-radius: 4px; }
 }
 
 @media (max-width: 700px) {
@@ -197,6 +277,9 @@ button { font: inherit; }
   .theme-d .resourceCard + .resourceCard, .theme-d .teamCard + .teamCard, .theme-d .eligibilityGrid article + article { padding-left: 25px; border-left: 1px solid var(--line); }
   .eligibilityGrid article { padding: 26px; }.ctaSection { width: calc(100% - 30px); margin-bottom: 70px; padding: 32px 25px; flex-direction: column; align-items: flex-start; }.ctaButton { width: 100%; }
   .theme-a .ctaSection { margin-bottom: 60px; }
+  .theme-a .teamCard { box-shadow: 4px 4px 0 var(--ink); }
+  .theme-a .teamCard:hover { box-shadow: 6px 6px 0 var(--lime); }
+  .theme-a .applicationFormShell { box-shadow: 4px 4px 0 var(--ink); }
   .footerInner { min-height: auto; padding-block: 24px 58px; grid-template-columns: 1fr; gap: 8px; }
   .styleSwitcher { right: 10px; bottom: 10px; }.styleSwitcher > span { display: none; }
   .directoryHero { padding-block: 75px 48px; }.directoryHero > p:last-child { font-size: 16px; }.directorySection { padding-bottom: 80px; }.filters { width: 100%; border-radius: 16px; }.filters button { flex: 1 1 auto; }.directoryGrid { border: 0; }
