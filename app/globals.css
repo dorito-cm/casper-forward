@@ -174,7 +174,10 @@ button { font: inherit; }
 .theme-a strong { font-weight: 500; }
 .theme-a .hero h1,
 .theme-a .directoryHero h1,
-.theme-a .applyIntro h1 { font-weight: 300; line-height: 1; letter-spacing: 0; }
+.theme-a .applyIntro h1 { line-height: 1; letter-spacing: 0; }
+.theme-a .hero h1,
+.theme-a .applyIntro h1 { font-weight: 500; }
+.theme-a .directoryHero h1 { font-weight: 300; }
 .theme-a .sectionHeading h2,
 .theme-a .ctaSection h2 { font-weight: 400; line-height: 1.1; letter-spacing: .02em; }
 .theme-a .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
@@ -213,12 +216,13 @@ button { font: inherit; }
 .theme-a .reasonCard,
 .theme-a .teamCard,
 .theme-a .resourceCard,
-.theme-a .eligibilityGrid article,
-.theme-a .applicationFormShell { border-radius: var(--radius); }
+.theme-a .eligibilityGrid article { border-radius: 0; }
+.theme-a .applicationFormShell { border-radius: 0; }
 .theme-a .teamCard { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
 .theme-a .teamCard:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--lime); }
-.theme-a .teamLogo { border-radius: 2px; }
-.theme-a .ctaSection { margin-bottom: 88px; border: 1px solid var(--ink); border-radius: 0; }
+.theme-a .teamLogo { border-radius: 0; }
+.theme-a .status-live { color: var(--ink); background: var(--lime); }
+.theme-a .ctaSection { margin-bottom: 88px; border: 0; border-radius: 0; }
 .theme-a .ctaButton { border-color: var(--lime); background: var(--lime); color: var(--ink); }
 .theme-a .ctaButton:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
 .theme-a .styleSwitcher { border-radius: 3px; }
@@ -227,7 +231,7 @@ button { font: inherit; }
 .theme-a .filters { border-color: var(--ink); border-radius: 3px; }
 .theme-a .filters button { border-radius: 2px; }
 .theme-a .filters button.active { background: var(--lime); color: var(--ink); }
-.theme-a .applicationFormShell { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.theme-a .applicationFormShell { border-color: var(--ink); box-shadow: none; }
 .theme-a :focus-visible { outline-color: var(--lime); }
 .theme-a .teamsSection,
 .theme-a .resourcesSection,
@@ -293,7 +297,6 @@ button { font: inherit; }
   .theme-a .sectionIntro { font-size: 16px; }
   .theme-a .teamCard { box-shadow: 4px 4px 0 var(--ink); }
   .theme-a .teamCard:hover { box-shadow: 6px 6px 0 var(--lime); }
-  .theme-a .applicationFormShell { box-shadow: 4px 4px 0 var(--ink); }
   .footerInner { min-height: auto; padding-block: 24px 58px; grid-template-columns: 1fr; gap: 8px; }
   .styleSwitcher { right: 10px; bottom: 10px; }.styleSwitcher > span { display: none; }
   .directoryHero { padding-block: 75px 48px; }.directoryHero > p:last-child { font-size: 16px; }.directorySection { padding-bottom: 80px; }.filters { width: 100%; border-radius: 16px; }.filters button { flex: 1 1 auto; }.directoryGrid { border: 0; }

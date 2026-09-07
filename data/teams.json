@@ -14,13 +14,13 @@
   {
     "name": "Demo Project Beta",
     "slug": "demo-project-beta",
-    "logo": "/teams/demo-project-beta/logo.svg",
+    "logo": "/teams/demo-project-beta/logo-square-test.svg",
     "description": "Placeholder project profile demonstrating the public team-card layout.",
     "status": "TESTNET",
     "latestMilestone": "Demo milestone — replace before launch",
-    "website": "",
-    "github": "",
-    "x": "",
+    "website": "https://x.com/dorito_cm",
+    "github": "https://x.com/dorito_cm",
+    "x": "https://x.com/dorito_cm",
     "featured": true
   },
   {
