@@ -179,7 +179,18 @@ button { font: inherit; }
 .theme-a .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
 .theme-a .journeyGrid h3 { letter-spacing: .02em; }
 .theme-a .brandMark { border-radius: 2px; font-weight: 500; }
-.theme-a .button { min-height: 50px; border-radius: 2px; letter-spacing: .01em; }
+.theme-a .mainNav { font-size: 14px; }
+.theme-a .button { min-height: 50px; border-radius: 2px; font-size: 14px; letter-spacing: .01em; }
+.theme-a .sectionIntro { font-size: 19px; }
+.theme-a .heroAside > p:last-child { font-size: 18px; }
+.theme-a .reasonCard div p,
+.theme-a .supportGrid p { font-size: 17px; }
+.theme-a .journeyGrid p,
+.theme-a .resourceCard p { font-size: 16px; }
+.theme-a .secondaryResources span { font-size: 13px; }
+.theme-a .teamCard > div > p { font-size: 17px; }
+.theme-a .eligibilityGrid li { font-size: 17px; }
+.theme-a .ctaSection > div > p:last-child { font-size: 18px; }
 .theme-a .buttonPrimary { border-color: var(--lime); background: var(--lime); color: var(--ink); }
 .theme-a .buttonPrimary:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
 .theme-a .buttonSecondary { border-color: var(--ink); background: var(--surface); }
@@ -261,6 +272,7 @@ button { font: inherit; }
 @media (max-width: 700px) {
   .navShell, .hero, .section, .directoryHero, .directorySection, .footerInner { width: min(100% - 30px, var(--max)); }.navShell { height: 68px; }.navApply { display: none; }.mainNav { top: 67px; left: 15px; right: 15px; }
   .hero { min-height: auto; padding-block: 72px 60px; }.hero h1, .directoryHero h1 { font-size: clamp(56px, 18vw, 78px); }.heroCopy { font-size: 17px; }.heroAside { margin-top: 15px; }
+  .theme-a .heroDecoration { width: 360px; height: 320px; top: -150px; right: -145px; opacity: .16; background: radial-gradient(ellipse 58% 48% at 78% 18%, color-mix(in srgb, var(--red) 48%, var(--purple)), color-mix(in srgb, var(--purple) 16%, transparent) 52%, transparent 78%); filter: blur(14px); }
   .theme-b .heroMain { padding: 28px 22px; box-shadow: 5px 5px 0 var(--purple); }.theme-b .heroAside { min-height: auto; }.theme-b .continuationMotif { margin-bottom: 22px; font-size: 24px; }.theme-d .hero { min-height: auto; }
   .signalRail { justify-content: flex-start; overflow-x: auto; padding-inline: 15px; scrollbar-width: none; }.signalRail::-webkit-scrollbar { display: none; }
   .section { padding-block: 72px; }.sectionHeading { gap: 22px; margin-bottom: 38px; }.sectionHeading h2, .ctaSection h2 { font-size: 42px; }.sectionIntro { font-size: 15px; }
@@ -277,6 +289,7 @@ button { font: inherit; }
   .theme-d .resourceCard + .resourceCard, .theme-d .teamCard + .teamCard, .theme-d .eligibilityGrid article + article { padding-left: 25px; border-left: 1px solid var(--line); }
   .eligibilityGrid article { padding: 26px; }.ctaSection { width: calc(100% - 30px); margin-bottom: 70px; padding: 32px 25px; flex-direction: column; align-items: flex-start; }.ctaButton { width: 100%; }
   .theme-a .ctaSection { margin-bottom: 60px; }
+  .theme-a .sectionIntro { font-size: 16px; }
   .theme-a .teamCard { box-shadow: 4px 4px 0 var(--ink); }
   .theme-a .teamCard:hover { box-shadow: 6px 6px 0 var(--lime); }
   .theme-a .applicationFormShell { box-shadow: 4px 4px 0 var(--ink); }
