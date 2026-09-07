@@ -3,6 +3,7 @@ import type { StyleKey } from "@/lib/types";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { StyleSwitcher } from "./StyleSwitcher";
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 
 export function ApplyPage({ styleKey }: { styleKey: StyleKey }) {
   return (
@@ -16,7 +17,7 @@ export function ApplyPage({ styleKey }: { styleKey: StyleKey }) {
             <p className="applyLead">{applicationContent.intro}</p>
             <p className="applySupporting">{applicationContent.supporting}</p>
             <a className="button buttonSecondary applyFallback" href={applicationFormUrl} target="_blank" rel="noreferrer">
-              {applicationContent.fallback} <span aria-hidden="true">↗</span>
+              {applicationContent.fallback} <ExternalLinkIcon />
             </a>
           </div>
         </section>

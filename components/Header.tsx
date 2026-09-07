@@ -5,6 +5,7 @@ import { useState } from "react";
 import { navItems } from "@/lib/content";
 import { applyPathFor, basePathFor, teamsPathFor } from "@/lib/styles";
 import type { StyleKey } from "@/lib/types";
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 
 export function Header({ styleKey }: { styleKey: StyleKey }) {
   const [open, setOpen] = useState(false);
@@ -37,7 +38,7 @@ export function Header({ styleKey }: { styleKey: StyleKey }) {
             <Link key={item.label} href={resolveHref(item.href)} onClick={() => setOpen(false)}>{item.label}</Link>
           ))}
         </nav>
-        <Link className="button buttonPrimary navApply" href={applyPathFor(styleKey)}>Apply <span aria-hidden="true">↗</span></Link>
+        <Link className="button buttonPrimary navApply" href={applyPathFor(styleKey)}>Apply <ExternalLinkIcon /></Link>
       </div>
     </header>
   );

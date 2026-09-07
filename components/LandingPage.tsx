@@ -4,6 +4,7 @@ import teamsData from "@/data/teams.json";
 import { eligibility, journey, primaryResources, reasons, secondaryResources, supportAreas } from "@/lib/content";
 import { applyPathFor, teamsPathFor } from "@/lib/styles";
 import type { StyleKey, Team } from "@/lib/types";
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { SectionHeading } from "./SectionHeading";
@@ -27,7 +28,7 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
               <h1>Keep <em>Building.</em></h1>
               <p className="heroCopy">Casper Forward helps promising builders move from hackathon prototype to production on Casper — with continued technical, ecosystem and go-to-market support along the way.</p>
               <div className="heroActions">
-                <Link className="button buttonPrimary" href={applyPathFor(styleKey)}>Apply to Casper Forward <span aria-hidden="true">↗</span></Link>
+                <Link className="button buttonPrimary" href={applyPathFor(styleKey)}>Apply to Casper Forward <ExternalLinkIcon /></Link>
                 <a className="button buttonSecondary" href="#program">See how it works <span aria-hidden="true">↓</span></a>
               </div>
             </div>
@@ -92,10 +93,10 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
         <section id="resources" className="section resourcesSection">
           <SectionHeading eyebrow="Builder Resources" title="Everything closer to hand." intro="A focused starting point for recurring questions, core documentation, builder tooling and program coordination." />
           <div className="resourceGrid">
-            {primaryResources.map((resource) => <a className="resourceCard" href={resource.href} key={resource.title} target={resource.href === "#" ? undefined : "_blank"} rel={resource.href === "#" ? undefined : "noreferrer"}><span>{resource.label}</span><h3>{resource.title}</h3><p>{resource.copy}</p><b aria-hidden="true">↗</b></a>)}
+            {primaryResources.map((resource) => <a className="resourceCard" href={resource.href} key={resource.title} target={resource.href === "#" ? undefined : "_blank"} rel={resource.href === "#" ? undefined : "noreferrer"}><span>{resource.label}</span><h3>{resource.title}</h3><p>{resource.copy}</p><b><ExternalLinkIcon /></b></a>)}
           </div>
           <div className="secondaryResources">
-            {secondaryResources.map((resource) => <a href={resource.href} key={resource.title} target="_blank" rel="noreferrer"><strong>{resource.title}</strong><span>{resource.copy}</span><b aria-hidden="true">↗</b></a>)}
+            {secondaryResources.map((resource) => <a href={resource.href} key={resource.title} target="_blank" rel="noreferrer"><strong>{resource.title}</strong><span>{resource.copy}</span><b><ExternalLinkIcon /></b></a>)}
           </div>
         </section>
 
@@ -109,7 +110,7 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
 
         <section id="apply" className="section ctaSection">
           <div><p className="eyebrow">Casper Forward</p><h2>Built something promising on Casper? Keep going.</h2><p>Tell us what you’re building, where it stands and what would help you reach the next milestone.</p></div>
-          <Link className="button ctaButton" href={applyPathFor(styleKey)}>Apply to Casper Forward <span aria-hidden="true">↗</span></Link>
+          <Link className="button ctaButton" href={applyPathFor(styleKey)}>Apply to Casper Forward <ExternalLinkIcon /></Link>
         </section>
       </main>
       <Footer styleKey={styleKey} />
