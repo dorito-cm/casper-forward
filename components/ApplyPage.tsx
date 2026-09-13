@@ -1,14 +1,12 @@
 import { applicationContent, applicationFormEmbedUrl, applicationFormUrl } from "@/lib/application";
-import type { StyleKey } from "@/lib/types";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
-import { StyleSwitcher } from "./StyleSwitcher";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
 
-export function ApplyPage({ styleKey }: { styleKey: StyleKey }) {
+export function ApplyPage() {
   return (
-    <div className={`theme theme-${styleKey}`}>
-      <Header styleKey={styleKey} />
+    <div className="theme">
+      <Header />
       <main className="applyPage">
         <section className="applyIntro">
           <div className="applyIntroCopy">
@@ -34,8 +32,7 @@ export function ApplyPage({ styleKey }: { styleKey: StyleKey }) {
           </div>
         </section>
       </main>
-      <Footer styleKey={styleKey} />
-      <StyleSwitcher active={styleKey} context="apply" />
+      <Footer />
     </div>
   );
 }

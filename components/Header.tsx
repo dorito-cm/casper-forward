@@ -3,23 +3,20 @@
 import Link from "next/link";
 import { useState } from "react";
 import { navItems } from "@/lib/content";
-import { applyPathFor, basePathFor, teamsPathFor } from "@/lib/styles";
-import type { StyleKey } from "@/lib/types";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
 
-export function Header({ styleKey }: { styleKey: StyleKey }) {
+export function Header() {
   const [open, setOpen] = useState(false);
-  const basePath = basePathFor(styleKey);
 
   const resolveHref = (href: string) => {
-    if (href === "teams") return teamsPathFor(styleKey);
-    return `${basePath || "/"}${href}`;
+    if (href === "teams") return "/teams";
+    return `/${href}`;
   };
 
   return (
     <header className="siteHeader">
       <div className="navShell">
-        <Link href={basePath || "/"} className="brand" aria-label="Casper Forward home">
+        <Link href="/" className="brand" aria-label="Casper Forward home">
           <span className="brandMark" aria-hidden="true">C</span>
           <span>Casper Forward</span>
         </Link>
@@ -38,7 +35,7 @@ export function Header({ styleKey }: { styleKey: StyleKey }) {
             <Link key={item.label} href={resolveHref(item.href)} onClick={() => setOpen(false)}>{item.label}</Link>
           ))}
         </nav>
-        <Link className="button buttonPrimary navApply" href={applyPathFor(styleKey)}>Apply <ExternalLinkIcon /></Link>
+        <Link className="button buttonPrimary navApply" href="/apply">Apply <ExternalLinkIcon /></Link>
       </div>
     </header>
   );

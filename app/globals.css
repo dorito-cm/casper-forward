@@ -117,8 +117,6 @@ button { font: inherit; }
 .ctaSection > div > p:last-child { max-width: 650px; margin: 22px 0 0; color: #ffe3e7; font-size: 16px; line-height: 1.6; }.ctaSection .eyebrow { color: #fff; opacity: .75; }.ctaButton { flex: none; background: #fff; color: #101114; }
 .footer { border-top: 1px solid var(--line); }.footerInner { min-height: 82px; display: grid; grid-template-columns: 1fr auto auto; align-items: center; gap: 36px; color: var(--muted); font-size: 11px; }.footerInner p { margin: 0; }.footerBrand { color: var(--ink); font-size: 13px; font-weight: 750; }
 
-.styleSwitcher { position: fixed; z-index: 60; right: 16px; bottom: 16px; padding: 7px; display: flex; align-items: center; gap: 4px; border: 1px solid color-mix(in srgb, var(--ink) 14%, transparent); border-radius: 99px; background: color-mix(in srgb, var(--paper) 88%, transparent); backdrop-filter: blur(14px); box-shadow: 0 12px 30px rgb(0 0 0 / 12%); }
-.styleSwitcher > span { padding: 0 8px; color: var(--muted); font-size: 9px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }.styleSwitcher a { width: 30px; height: 30px; display: grid; place-items: center; border-radius: 50%; font-size: 10px; font-weight: 850; }.styleSwitcher a.active { background: var(--red); color: #fff; }
 
 .teamsPage { min-height: 80vh; }.directoryHero { padding-block: clamp(90px, 10vw, 140px) 70px; }.directoryHero h1 { max-width: 950px; font-size: clamp(58px, 8vw, 108px); }.directoryHero > p:last-child { max-width: 680px; color: var(--muted); font-size: 19px; line-height: 1.6; }
 .directorySection { padding-bottom: 120px; }.filters { display: flex; flex-wrap: wrap; gap: 8px; padding: 9px; border: 1px solid var(--line); border-radius: 99px; width: fit-content; background: var(--surface); }.filters button { min-height: 38px; padding: 0 15px; border: 0; border-radius: 99px; background: transparent; color: var(--muted); font-size: 12px; font-weight: 700; cursor: pointer; }.filters button.active { background: var(--ink); color: var(--paper); }.resultsCount { margin: 22px 0; color: var(--muted); font-size: 12px; }.directoryGrid { grid-template-columns: repeat(3, 1fr); }
@@ -137,8 +135,8 @@ button { font: inherit; }
 .applicationFormShell { padding: 12px; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #f2f1ef; }
 .applicationFormFrame { display: block; width: 100%; height: 2000px; min-height: 1400px; border: 0; background: #fff; color-scheme: light; }
 
-/* A — Casper editorial, refined toward the current visual system */
-.theme-a {
+/* Approved Casper editorial visual system */
+.theme {
   --red: #ff2933;
   --red-deep: #df1723;
   --ink: #08090a;
@@ -153,152 +151,117 @@ button { font: inherit; }
   font-family: var(--font-casper-sans), Arial, sans-serif;
   font-synthesis: none;
 }
-.theme-a .brand,
-.theme-a .mainNav,
-.theme-a .button,
-.theme-a .pill,
-.theme-a .eyebrow,
-.theme-a .signalRail,
-.theme-a .cardIndex,
-.theme-a .stepNumber,
-.theme-a .supportGrid article > span,
-.theme-a .resourceCard > span,
-.theme-a .status,
-.theme-a .milestone span,
-.theme-a .teamLinks,
-.theme-a .secondaryResources strong,
-.theme-a .filters button,
-.theme-a .footerBrand,
-.theme-a .styleSwitcher,
-.theme-a h3,
-.theme-a strong { font-weight: 500; }
-.theme-a .hero h1,
-.theme-a .directoryHero h1,
-.theme-a .applyIntro h1 { line-height: 1; letter-spacing: 0; }
-.theme-a .hero h1,
-.theme-a .applyIntro h1 { font-weight: 500; }
-.theme-a .directoryHero h1 { font-weight: 300; }
-.theme-a .sectionHeading h2,
-.theme-a .ctaSection h2 { font-weight: 400; line-height: 1.1; letter-spacing: .02em; }
-.theme-a .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
-.theme-a .journeyGrid h3 { letter-spacing: .02em; }
-.theme-a .brandMark { border-radius: 2px; font-weight: 500; }
-.theme-a .mainNav { font-size: 14px; }
-.theme-a .button { min-height: 50px; border-radius: 2px; font-size: 14px; letter-spacing: .01em; }
-.theme-a .sectionIntro { font-size: 19px; }
-.theme-a .heroAside > p:last-child { font-size: 18px; }
-.theme-a .reasonCard div p,
-.theme-a .supportGrid p { font-size: 17px; }
-.theme-a .journeyGrid p,
-.theme-a .resourceCard p { font-size: 16px; }
-.theme-a .secondaryResources span { font-size: 13px; }
-.theme-a .teamCard > div > p { font-size: 17px; }
-.theme-a .eligibilityGrid li { font-size: 17px; }
-.theme-a .ctaSection > div > p:last-child { font-size: 18px; }
-.theme-a .buttonPrimary { border-color: var(--lime); background: var(--lime); color: var(--ink); }
-.theme-a .buttonPrimary:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
-.theme-a .buttonSecondary { border-color: var(--ink); background: var(--surface); }
-.theme-a .buttonSecondary:hover { border-color: var(--lime); background: var(--lime); }
-.theme-a .navApply { min-height: 42px; }
-.theme-a .pill { border-radius: 2px; border-color: var(--ink); background: transparent; }
-.theme-a .pill span { border-radius: 0; background: var(--lime); }
-.theme-a .signalRail { border-block: 1px solid var(--ink); }
-.theme-a .signalRail span::before { color: var(--lime); }
-.theme-a .journeySection { background: var(--ink); }
-.theme-a .stepNumber { color: var(--lime); }
-.theme-a .reasonCard,
-.theme-a .resourceCard,
-.theme-a .eligibilityGrid article { border-top: 3px solid var(--red); }
-.theme-a .reasonCard:hover,
-.theme-a .resourceCard:hover { transform: translateY(-2px); box-shadow: none; }
-.theme-a .supportGrid,
-.theme-a .supportVisual,
-.theme-a .reasonCard,
-.theme-a .teamCard,
-.theme-a .resourceCard,
-.theme-a .eligibilityGrid article { border-radius: 0; }
-.theme-a .applicationFormShell { border-radius: 0; }
-.theme-a .teamCard { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
-.theme-a .teamCard:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--lime); }
-.theme-a .teamLogo { border-radius: 0; }
-.theme-a .status-live { color: var(--ink); background: var(--lime); }
-.theme-a .ctaSection { margin-bottom: 88px; border: 0; border-radius: 0; }
-.theme-a .ctaButton { border-color: var(--lime); background: var(--lime); color: var(--ink); }
-.theme-a .ctaButton:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
-.theme-a .styleSwitcher { border-radius: 3px; }
-.theme-a .styleSwitcher a { border-radius: 1px; }
-.theme-a .styleSwitcher a.active { background: var(--lime); color: var(--ink); }
-.theme-a .filters { border-color: var(--ink); border-radius: 3px; }
-.theme-a .filters button { border-radius: 2px; }
-.theme-a .filters button.active { background: var(--lime); color: var(--ink); }
-.theme-a .applicationFormShell { border-color: var(--ink); box-shadow: none; }
-.theme-a :focus-visible { outline-color: var(--lime); }
-.theme-a .teamsSection,
-.theme-a .resourcesSection,
-.theme-a .eligibilitySection { padding-block: clamp(70px, 8vw, 104px); }
-.theme-a .directoryHero { padding-block: clamp(82px, 9vw, 124px) 62px; }
-.theme-a .directorySection { padding-bottom: 105px; }
+.theme .brand,
+.theme .mainNav,
+.theme .button,
+.theme .pill,
+.theme .eyebrow,
+.theme .signalRail,
+.theme .cardIndex,
+.theme .stepNumber,
+.theme .supportGrid article > span,
+.theme .resourceCard > span,
+.theme .status,
+.theme .milestone span,
+.theme .teamLinks,
+.theme .secondaryResources strong,
+.theme .filters button,
+.theme .footerBrand,
+.theme h3,
+.theme strong { font-weight: 500; }
+.theme .hero h1,
+.theme .directoryHero h1,
+.theme .applyIntro h1 { line-height: 1; letter-spacing: 0; }
+.theme .hero h1,
+.theme .applyIntro h1 { font-weight: 500; }
+.theme .directoryHero h1 { font-weight: 300; }
+.theme .sectionHeading h2,
+.theme .ctaSection h2 { font-weight: 400; line-height: 1.1; letter-spacing: .02em; }
+.theme .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
+.theme .journeyGrid h3 { letter-spacing: .02em; }
+.theme .brandMark { border-radius: 2px; font-weight: 500; }
+.theme .mainNav { font-size: 14px; }
+.theme .button { min-height: 50px; border-radius: 2px; font-size: 14px; letter-spacing: .01em; }
+.theme .sectionIntro { font-size: 19px; }
+.theme .heroAside > p:last-child { font-size: 18px; }
+.theme .reasonCard div p,
+.theme .supportGrid p { font-size: 17px; }
+.theme .journeyGrid p,
+.theme .resourceCard p { font-size: 16px; }
+.theme .secondaryResources span { font-size: 13px; }
+.theme .teamCard > div > p { font-size: 17px; }
+.theme .eligibilityGrid li { font-size: 17px; }
+.theme .ctaSection > div > p:last-child { font-size: 18px; }
+.theme .buttonPrimary { border-color: var(--lime); background: var(--lime); color: var(--ink); }
+.theme .buttonPrimary:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
+.theme .buttonSecondary { border-color: var(--ink); background: var(--surface); }
+.theme .buttonSecondary:hover { border-color: var(--lime); background: var(--lime); }
+.theme .navApply { min-height: 42px; }
+.theme .pill { border-radius: 2px; border-color: var(--ink); background: transparent; }
+.theme .pill span { border-radius: 0; background: var(--lime); }
+.theme .signalRail { border-block: 1px solid var(--ink); }
+.theme .signalRail span::before { color: var(--lime); }
+.theme .journeySection { background: var(--ink); }
+.theme .stepNumber { color: var(--lime); }
+.theme .reasonCard,
+.theme .resourceCard,
+.theme .eligibilityGrid article { border-top: 3px solid var(--red); }
+.theme .reasonCard:hover,
+.theme .resourceCard:hover { transform: translateY(-2px); box-shadow: none; }
+.theme .supportGrid,
+.theme .supportVisual,
+.theme .reasonCard,
+.theme .teamCard,
+.theme .resourceCard,
+.theme .eligibilityGrid article { border-radius: 0; }
+.theme .applicationFormShell { border-radius: 0; }
+.theme .teamCard { border-color: var(--ink); box-shadow: 5px 5px 0 var(--ink); }
+.theme .teamCard:hover { transform: translate(-2px, -2px); box-shadow: 8px 8px 0 var(--lime); }
+.theme .teamLogo { border-radius: 0; }
+.theme .status-live { color: var(--ink); background: var(--lime); }
+.theme .ctaSection { margin-bottom: 88px; border: 0; border-radius: 0; }
+.theme .ctaButton { border-color: var(--lime); background: var(--lime); color: var(--ink); }
+.theme .ctaButton:hover { border-color: var(--lime-deep); background: var(--lime-deep); }
+.theme .filters { border-color: var(--ink); border-radius: 3px; }
+.theme .filters button { border-radius: 2px; }
+.theme .filters button.active { background: var(--lime); color: var(--ink); }
+.theme .applicationFormShell { border-color: var(--ink); box-shadow: none; }
+.theme :focus-visible { outline-color: var(--lime); }
+.theme .teamsSection,
+.theme .resourcesSection,
+.theme .eligibilitySection { padding-block: clamp(70px, 8vw, 104px); }
+.theme .directoryHero { padding-block: clamp(82px, 9vw, 124px) 62px; }
+.theme .directorySection { padding-bottom: 105px; }
 
-/* B — modular technical system */
-.theme-b { --paper: #f1f1ef; --surface: #f8f8f6; --surface-2: #e8e8e5; --line: #c8cac6; --radius: 4px; --max: 1320px; background-image: linear-gradient(rgb(16 17 20 / 3%) 1px, transparent 1px), linear-gradient(90deg, rgb(16 17 20 / 3%) 1px, transparent 1px); background-size: 48px 48px; }
-.theme-b .siteHeader { border-bottom: 2px solid var(--ink); }.theme-b .brandMark { border-radius: 0; }.theme-b .navShell { height: 68px; }.theme-b .mainNav { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; text-transform: uppercase; font-size: 11px; }.theme-b .button { border-radius: 2px; text-transform: uppercase; letter-spacing: .04em; }.theme-b .hero { min-height: 650px; }.theme-b .heroGrid { grid-template-columns: 2fr 1fr; }.theme-b .heroMain { padding: 50px; border: 1px solid var(--ink); background: var(--paper); box-shadow: 8px 8px 0 var(--purple); }.theme-b .hero h1 { font-size: clamp(62px, 8.5vw, 116px); }.theme-b .pill { border-radius: 2px; background: transparent; font-family: ui-monospace, monospace; }.theme-b .heroDecoration { display: none; }.theme-b .heroAside { align-self: stretch; padding: 28px; display: flex; flex-direction: column; justify-content: flex-end; border: 1px solid var(--ink); background: var(--ink); color: #fff; }.theme-b .continuationMotif { display: flex; align-items: center; gap: 14px; margin-bottom: 30px; color: var(--purple); font: 700 28px/1 ui-monospace, SFMono-Regular, Menlo, monospace; letter-spacing: -.05em; }.theme-b .continuationMotif span:nth-child(2) { opacity: .65; }.theme-b .signalRail { border-block: 1px solid var(--ink); background: var(--lavender); color: var(--ink); }.theme-b .signalRail span::before { content: "[+]"; color: var(--red); }.theme-b .sectionHeading { grid-template-columns: .85fr 1.15fr; border-top: 2px solid var(--ink); padding-top: 22px; }.theme-b .sectionHeading h2 { font-size: clamp(38px, 4.7vw, 62px); }.theme-b .eyebrow, .theme-b .cardIndex, .theme-b .supportGrid article > span, .theme-b .resourceCard > span { font-family: ui-monospace, monospace; }.theme-b .reasonGrid { grid-template-columns: 1fr 1fr 1fr; gap: 0; border: 1px solid var(--ink); }.theme-b .reasonCard { border: 0; border-right: 1px solid var(--ink); }.theme-b .reasonCard:last-child { border-right: 0; }.theme-b .journeySection { background-color: #15161a; background-image: linear-gradient(rgb(255 255 255 / 4%) 1px, transparent 1px), linear-gradient(90deg, rgb(255 255 255 / 4%) 1px, transparent 1px); background-size: 32px 32px; }.theme-b .journeyGrid li:nth-child(odd) { background: rgb(124 92 255 / 6%); }.theme-b .supportLayout { grid-template-columns: 1.45fr .75fr; }.theme-b .supportGrid, .theme-b .supportVisual { border-color: var(--ink); }.theme-b .supportGrid { gap: 0; background: transparent; }.theme-b .supportGrid article { border-right: 1px solid var(--ink); border-bottom: 1px solid var(--ink); }.theme-b .supportGrid article:nth-child(even) { border-right: 0; }.theme-b .supportGrid article:nth-last-child(-n+2) { border-bottom: 0; }.theme-b .teamCard, .theme-b .resourceCard { box-shadow: 4px 4px 0 #d9d4ef; }.theme-b .secondaryResources { border-color: var(--ink); }.theme-b .secondaryResources a { border-color: var(--ink); }
-.theme-b .applyIntroCopy { padding: 48px; border: 1px solid var(--ink); background: var(--paper); box-shadow: 8px 8px 0 var(--purple); }
-.theme-b .applyIntro .eyebrow { font-family: ui-monospace, SFMono-Regular, Menlo, monospace; }
-.theme-b .applicationFormShell { padding: 8px; border-color: var(--ink); box-shadow: 4px 4px 0 #d9d4ef; }
-
-/* C — cinematic premium dark */
-.theme-c { --ink: #f7f7f5; --paper: #0d0d11; --surface: #17171d; --surface-2: #202027; --line: #34343d; --muted: #adaeb7; --radius: 30px; color-scheme: dark; background: radial-gradient(circle at 80% 10%, #291d3b 0, transparent 26%), #0d0d11; }
-.theme-c .siteHeader { background: rgb(13 13 17 / 76%); }.theme-c .brandMark { box-shadow: 0 0 28px rgb(239 35 60 / 24%); }.theme-c .buttonSecondary { background: rgb(255 255 255 / 3%); }.theme-c .hero { min-height: 760px; }.theme-c .heroGrid { grid-template-columns: 1.5fr .65fr; }.theme-c .hero h1 { text-shadow: 0 16px 80px rgb(124 92 255 / 18%); }.theme-c .heroAside { padding: 30px; border: 1px solid #42424d; border-radius: 24px; background: linear-gradient(145deg, rgb(124 92 255 / 15%), rgb(255 255 255 / 2%)); box-shadow: inset 0 1px rgb(255 255 255 / 8%); }.theme-c .heroDecoration { opacity: .55; filter: blur(35px); }.theme-c .signalRail { background: var(--red); }.theme-c .signalRail span::before { color: #fff; }.theme-c .sectionHeading h2, .theme-c .hero h1 { font-weight: 680; }.theme-c .reasonCard, .theme-c .teamCard, .theme-c .resourceCard, .theme-c .eligibilityGrid article { background: linear-gradient(150deg, #1c1c23, #141419); box-shadow: inset 0 1px rgb(255 255 255 / 5%); }.theme-c .reasonCard:hover, .theme-c .teamCard:hover, .theme-c .resourceCard:hover { box-shadow: 0 24px 70px rgb(0 0 0 / 35%), inset 0 1px rgb(255 255 255 / 8%); }.theme-c .journeySection { background: #050507; border-block: 1px solid #2e2e37; }.theme-c .journeyGrid li { min-height: 300px; background-color: rgb(239 35 60 / 1.5%); box-shadow: inset 0 0 24px rgb(124 92 255 / 1.5%); }.theme-c .journeyGrid li:nth-child(2) { background-color: rgb(239 35 60 / 2.5%); box-shadow: inset 0 0 28px rgb(124 92 255 / 2.5%); }.theme-c .journeyGrid li:nth-child(3) { background-color: rgb(239 35 60 / 4%); box-shadow: inset 0 0 32px rgb(124 92 255 / 4%); }.theme-c .journeyGrid li:nth-child(4) { background-color: rgb(239 35 60 / 5.5%); box-shadow: inset 0 0 36px rgb(124 92 255 / 5.5%); }.theme-c .journeyGrid li:nth-child(5) { background-color: rgb(239 35 60 / 7.5%); box-shadow: inset 0 0 42px rgb(124 92 255 / 7.5%); border-color: #4a3d4e; }.theme-c .supportGrid { background: #35353d; }.theme-c .supportGrid article { background: #17171d; }.theme-c .supportVisual { background: #eeeceb; color: #101114; border-color: #454550; box-shadow: 0 40px 100px rgb(124 92 255 / 12%); }.theme-c .supportVisual .quoteBlock p { color: #67686d; }.theme-c .secondaryResources, .theme-c .resourcesSection, .theme-c .teamsSection, .theme-c .eligibilitySection { border-color: #34343d; }.theme-c .ctaSection { background: linear-gradient(120deg, #ef233c 0%, #bf1931 62%, #7c2349 100%); box-shadow: 0 30px 100px rgb(239 35 60 / 16%); }.theme-c .styleSwitcher { background: rgb(20 20 25 / 88%); }.theme-c .filters { background: #17171d; }.theme-c .filters button.active { background: var(--red); color: #fff; }
-.theme-c .applicationFormShell { border-color: #454550; background: #eeeceb; box-shadow: 0 24px 70px rgb(0 0 0 / 24%); }
-
-/* D — minimal institutional system */
-.theme-d { --paper: #fbfaf7; --surface: #fbfaf7; --surface-2: #f2f0eb; --line: #cfcfc9; --muted: #5b5d61; --radius: 0px; --max: 1180px; }
-.theme-d .siteHeader { position: relative; background: var(--paper); border-bottom: 1px solid var(--ink); }.theme-d .brandMark { width: 24px; height: 24px; border-radius: 50%; font-size: 13px; }.theme-d .navShell { height: 86px; }.theme-d .button { border-radius: 0; }.theme-d .navApply { background: transparent; color: var(--ink); border-bottom: 1px solid var(--red); padding-inline: 4px; }.theme-d .hero { min-height: 720px; border-bottom: 1px solid var(--ink); }.theme-d .heroGrid { grid-template-columns: 1fr 330px; align-items: start; }.theme-d .hero h1, .theme-d .directoryHero h1, .theme-d .sectionHeading h2, .theme-d .ctaSection h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.055em; }.theme-d .hero h1 { max-width: 900px; font-size: clamp(70px, 10vw, 136px); line-height: .86; }.theme-d .pill { padding: 0; border: 0; border-radius: 0; background: none; }.theme-d .heroAside { padding: 25px 0; border: 0; border-top: 1px solid var(--ink); }.theme-d .heroDecoration { display: none; }.theme-d .signalRail { padding-block: 13px; background: var(--paper); color: var(--muted); border-bottom: 1px solid var(--line); }.theme-d .signalRail span::before { content: "/"; color: var(--red); }.theme-d .sectionHeading { grid-template-columns: 1.25fr .75fr; align-items: start; }.theme-d .sectionHeading h2 { font-size: clamp(44px, 5.8vw, 70px); }.theme-d .reasonGrid { gap: 0; border-top: 1px solid var(--ink); }.theme-d .reasonCard { min-height: 260px; padding: 30px 28px 28px 0; border: 0; border-right: 1px solid var(--line); background: transparent; }.theme-d .reasonCard + .reasonCard { padding-left: 28px; }.theme-d .reasonCard:last-child { border-right: 0; }.theme-d .reasonCard:hover, .theme-d .teamCard:hover, .theme-d .resourceCard:hover { box-shadow: none; transform: translateY(-2px); }.theme-d .journeySection { padding-block: 105px; background: #f0eee9; color: var(--ink); border-block: 1px solid var(--ink); }.theme-d .journeySection .sectionIntro, .theme-d .journeyGrid p { color: var(--muted); }.theme-d .journeyGrid { border-color: var(--ink); }.theme-d .journeyGrid li { min-height: 240px; border-color: var(--line); }.theme-d .stepNumber { color: var(--red); }.theme-d .supportLayout { grid-template-columns: 1.5fr .75fr; gap: 0; border-block: 1px solid var(--ink); }.theme-d .supportGrid { border: 0; border-right: 1px solid var(--ink); }.theme-d .supportGrid article { padding-left: 0; }.theme-d .supportVisual { border: 0; }.theme-d .teamGrid, .theme-d .resourceGrid { gap: 0; border-top: 1px solid var(--ink); }.theme-d .teamCard, .theme-d .resourceCard { padding-left: 0; border: 0; border-right: 1px solid var(--line); background: transparent; }.theme-d .teamCard + .teamCard, .theme-d .resourceCard + .resourceCard { padding-left: 24px; }.theme-d .teamCard:last-child, .theme-d .resourceCard:last-child { border-right: 0; }.theme-d .eligibilityGrid { gap: 0; border-top: 1px solid var(--ink); }.theme-d .eligibilityGrid article { padding-left: 0; border: 0; }.theme-d .eligibilityGrid article + article { padding-left: 45px; border-left: 1px solid var(--line); }.theme-d .ctaSection { border-radius: 0; background: var(--ink); }.theme-d .directoryGrid { border-top: 1px solid var(--ink); }
-.theme-d .applyIntroCopy { padding-top: 30px; border-top: 1px solid var(--ink); }
-.theme-d .applyIntro h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; letter-spacing: -.055em; }
-.theme-d .applicationFormShell { padding: 0; border-inline: 0; border-radius: 0; background: transparent; }
-
-@media (min-width: 1051px) {
-  .theme-d .supportGrid article { padding: 27px 32px; }
-}
 
 @media (max-width: 1050px) {
   .mainNav { display: none; position: absolute; top: 75px; left: 24px; right: 24px; padding: 20px; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: 0 20px 50px rgb(0 0 0 / 12%); }
   .mainNav.isOpen { display: flex; }.mainNav a { padding: 13px 8px; }.menuButton { display: block; }.navApply { margin-left: 0; }
-  .heroGrid, .theme-b .heroGrid, .theme-c .heroGrid, .theme-d .heroGrid, .sectionHeading, .theme-b .sectionHeading, .theme-d .sectionHeading { grid-template-columns: 1fr; }
-  .heroAside { max-width: 700px; }.theme-b .heroAside { min-height: 220px; }.theme-d .heroAside { max-width: 600px; }
+  .heroGrid, .sectionHeading { grid-template-columns: 1fr; }
+  .heroAside { max-width: 700px; }
   .journeyGrid { grid-template-columns: repeat(3, 1fr); }.journeyGrid li { border-bottom: 1px solid #36383e; }.journeyGrid li:nth-child(3) { border-right: 0; }.journeyGrid li:nth-last-child(-n+2) { border-bottom: 0; }
-  .supportLayout, .theme-b .supportLayout, .theme-d .supportLayout { grid-template-columns: 1fr; }.supportVisual { min-height: 680px; }.theme-d .supportGrid { border-right: 0; border-bottom: 1px solid var(--ink); }
+  .supportLayout { grid-template-columns: 1fr; }.supportVisual { min-height: 680px; }
   .resourceGrid { grid-template-columns: repeat(2, 1fr); }.resourceCard { min-height: 230px; }.teamGrid, .directoryGrid { grid-template-columns: repeat(2, 1fr); }
-  .theme-d .teamCard:nth-child(2), .theme-d .resourceCard:nth-child(2) { border-right: 0; }.theme-d .resourceCard:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
-  .theme-a .mainNav { border-radius: 4px; }
+  .theme .mainNav { border-radius: 4px; }
 }
 
 @media (max-width: 700px) {
   .navShell, .hero, .section, .directoryHero, .directorySection, .footerInner { width: min(100% - 30px, var(--max)); }.navShell { height: 68px; }.navApply { display: none; }.mainNav { top: 67px; left: 15px; right: 15px; }
   .hero { min-height: auto; padding-block: 72px 60px; }.hero h1, .directoryHero h1 { font-size: clamp(56px, 18vw, 78px); }.heroCopy { font-size: 17px; }.heroAside { margin-top: 15px; }
-  .theme-a .heroDecoration { width: 360px; height: 320px; top: -150px; right: -145px; opacity: .16; background: radial-gradient(ellipse 58% 48% at 78% 18%, color-mix(in srgb, var(--red) 48%, var(--purple)), color-mix(in srgb, var(--purple) 16%, transparent) 52%, transparent 78%); filter: blur(14px); }
-  .theme-b .heroMain { padding: 28px 22px; box-shadow: 5px 5px 0 var(--purple); }.theme-b .heroAside { min-height: auto; }.theme-b .continuationMotif { margin-bottom: 22px; font-size: 24px; }.theme-d .hero { min-height: auto; }
+  .theme .heroDecoration { width: 360px; height: 320px; top: -150px; right: -145px; opacity: .16; background: radial-gradient(ellipse 58% 48% at 78% 18%, color-mix(in srgb, var(--red) 48%, var(--purple)), color-mix(in srgb, var(--purple) 16%, transparent) 52%, transparent 78%); filter: blur(14px); }
   .signalRail { justify-content: flex-start; overflow-x: auto; padding-inline: 15px; scrollbar-width: none; }.signalRail::-webkit-scrollbar { display: none; }
   .section { padding-block: 72px; }.sectionHeading { gap: 22px; margin-bottom: 38px; }.sectionHeading h2, .ctaSection h2 { font-size: 42px; }.sectionIntro { font-size: 15px; }
   .reasonGrid, .teamGrid, .directoryGrid, .resourceGrid, .eligibilityGrid, .supportGrid, .secondaryResources, .journeyGrid { grid-template-columns: 1fr; }
-  .reasonCard { min-height: 0; gap: 30px; }.theme-b .reasonGrid { width: 100%; min-width: 0; grid-template-columns: minmax(0, 1fr); }.theme-b .reasonGrid, .theme-d .reasonGrid, .theme-d .teamGrid, .theme-d .resourceGrid { border: 0; gap: 12px; }.theme-b .reasonCard, .theme-d .reasonCard, .theme-d .teamCard, .theme-d .resourceCard { width: 100%; padding: 25px; border: 1px solid var(--line); }.theme-d .reasonCard { min-height: 0; }.theme-b .reasonGrid > .reasonCard:nth-child(n) { border: 1px solid var(--ink); border-radius: 4px; }
-  .journeySection { width: 100%; padding-inline: 15px; }.journeyGrid li, .journeyGrid li:nth-child(3), .journeyGrid li:nth-last-child(-n+2) { min-height: 210px; border-right: 0; border-bottom: 1px solid #36383e; }.journeyGrid li:last-child { border-bottom: 0; }.theme-d .journeyGrid li { border-color: var(--line); }
-  .theme-c .journeyGrid li:nth-child(n) { width: 100%; min-height: 210px; padding: 28px 23px 34px; border-right: 0; border-bottom: 1px solid #36383e; }
-  .theme-c .journeyGrid li:last-child { border-bottom: 0; }
-  .supportGrid { grid-template-rows: none; }.supportGrid article { min-height: 190px; }.theme-b .supportGrid { grid-template-columns: 1fr; gap: 0; border: 1px solid var(--ink); background: transparent; }.theme-b .supportGrid article, .theme-b .supportGrid article:nth-child(even), .theme-b .supportGrid article:nth-last-child(-n+2) { border-right: 0; border-bottom: 1px solid var(--ink); }.theme-b .supportGrid article:last-child { border-bottom: 0; }.supportVisual { min-height: 630px; }.quoteBlock { padding: 28px 25px 15px; }.supportImage { min-height: 390px; }
+  .reasonCard { min-height: 0; gap: 30px; }
+  .journeySection { width: 100%; padding-inline: 15px; }.journeyGrid li, .journeyGrid li:nth-child(3), .journeyGrid li:nth-last-child(-n+2) { min-height: 210px; border-right: 0; border-bottom: 1px solid #36383e; }.journeyGrid li:last-child { border-bottom: 0; }
+  .supportGrid { grid-template-rows: none; }.supportGrid article { min-height: 190px; }.supportVisual { min-height: 630px; }.quoteBlock { padding: 28px 25px 15px; }.supportImage { min-height: 390px; }
   .teamCard { min-height: 370px; }.resourceGrid { gap: 12px; }.resourceCard { min-height: 230px; }.secondaryResources { border: 0; }.secondaryResources a, .secondaryResources a:last-child { border: 1px solid var(--line); border-bottom: 0; }.secondaryResources a:last-child { border-bottom: 1px solid var(--line); }
-  .theme-b .secondaryResources { border: 1px solid var(--ink); }
-  .theme-b .secondaryResources > a:nth-child(n) { border: 0; border-bottom: 1px solid var(--ink); }
-  .theme-b .secondaryResources > a:last-child { border-bottom: 0; }
-  .theme-d .resourceCard + .resourceCard, .theme-d .teamCard + .teamCard, .theme-d .eligibilityGrid article + article { padding-left: 25px; border-left: 1px solid var(--line); }
   .eligibilityGrid article { padding: 26px; }.ctaSection { width: calc(100% - 30px); margin-bottom: 70px; padding: 32px 25px; flex-direction: column; align-items: flex-start; }.ctaButton { width: 100%; }
-  .theme-a .ctaSection { margin-bottom: 60px; }
-  .theme-a .sectionIntro { font-size: 16px; }
-  .theme-a .teamCard { box-shadow: 4px 4px 0 var(--ink); }
-  .theme-a .teamCard:hover { box-shadow: 6px 6px 0 var(--lime); }
+  .theme .ctaSection { margin-bottom: 60px; }
+  .theme .sectionIntro { font-size: 16px; }
+  .theme .teamCard { box-shadow: 4px 4px 0 var(--ink); }
+  .theme .teamCard:hover { box-shadow: 6px 6px 0 var(--lime); }
   .footerInner { min-height: auto; padding-block: 24px 58px; grid-template-columns: 1fr; gap: 8px; }
-  .styleSwitcher { right: 10px; bottom: 10px; }.styleSwitcher > span { display: none; }
   .directoryHero { padding-block: 75px 48px; }.directoryHero > p:last-child { font-size: 16px; }.directorySection { padding-bottom: 80px; }.filters { width: 100%; border-radius: 16px; }.filters button { flex: 1 1 auto; }.directoryGrid { border: 0; }
   .applyIntro, .applicationFormSection { width: min(100% - 30px, var(--max)); }
   .applyIntro { padding-block: 68px 42px; }
@@ -309,10 +272,6 @@ button { font: inherit; }
   .applicationFormSection { padding-bottom: 70px; }
   .applicationFormShell { padding: 4px; }
   .applicationFormFrame { height: 2350px; min-height: 1800px; }
-  .theme-b .applyIntroCopy { padding: 26px 22px; box-shadow: 5px 5px 0 var(--purple); }
-  .theme-b .applicationFormShell { padding: 4px; box-shadow: 3px 3px 0 #d9d4ef; }
-  .theme-d .applyIntroCopy { padding-top: 24px; }
-  .theme-d .applicationFormShell { padding: 0; }
 }
 
 @media (prefers-reduced-motion: reduce) {

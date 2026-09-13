@@ -2,23 +2,21 @@ import Image from "next/image";
 import Link from "next/link";
 import teamsData from "@/data/teams.json";
 import { eligibility, journey, primaryResources, reasons, secondaryResources, supportAreas } from "@/lib/content";
-import { applyPathFor, teamsPathFor } from "@/lib/styles";
-import type { StyleKey, Team } from "@/lib/types";
+import type { Team } from "@/lib/types";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
 import { SectionHeading } from "./SectionHeading";
-import { StyleSwitcher } from "./StyleSwitcher";
 import { TeamCard } from "./TeamCard";
 
 const teams = teamsData as Team[];
 
-export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
+export function LandingPage() {
   const featured = teams.filter((team) => team.featured).slice(0, 3);
 
   return (
-    <div className={`theme theme-${styleKey}`}>
-      <Header styleKey={styleKey} />
+    <div className="theme">
+      <Header />
       <main>
         <section className="hero" id="top">
           <div className="heroDecoration" aria-hidden="true" />
@@ -28,7 +26,7 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
               <h1>Keep <em>Building.</em></h1>
               <p className="heroCopy">Casper Forward helps promising builders move from hackathon prototype to production on Casper — with continued technical, ecosystem and go-to-market support along the way.</p>
               <div className="heroActions">
-                <Link className="button buttonPrimary" href={applyPathFor(styleKey)}>Apply to Casper Forward <ExternalLinkIcon /></Link>
+                <Link className="button buttonPrimary" href="/apply">Apply to Casper Forward <ExternalLinkIcon /></Link>
                 <a className="button buttonSecondary" href="#program">See how it works <span aria-hidden="true">↓</span></a>
               </div>
             </div>
@@ -87,13 +85,17 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
         <section id="teams" className="section teamsSection">
           <SectionHeading eyebrow="Teams Moving Forward" title="Built on Casper. Still building." intro="A public view of participating projects and the milestones they choose to share as they keep moving." />
           <div className="teamGrid">{featured.map((team) => <TeamCard team={team} key={team.slug} />)}</div>
-          <div className="sectionAction"><Link className="button buttonSecondary" href={teamsPathFor(styleKey)}>Explore all teams <span aria-hidden="true">→</span></Link></div>
+          <div className="sectionAction"><Link className="button buttonSecondary" href="/teams">Explore all teams <span aria-hidden="true">→</span></Link></div>
         </section>
 
         <section id="resources" className="section resourcesSection">
           <SectionHeading eyebrow="Builder Resources" title="Everything closer to hand." intro="A focused starting point for recurring questions, core documentation, builder tooling and program coordination." />
           <div className="resourceGrid">
-            {primaryResources.map((resource) => <a className="resourceCard" href={resource.href} key={resource.title} target={resource.href === "#" ? undefined : "_blank"} rel={resource.href === "#" ? undefined : "noreferrer"}><span>{resource.label}</span><h3>{resource.title}</h3><p>{resource.copy}</p><b><ExternalLinkIcon /></b></a>)}
+            {primaryResources.map((resource) => resource.href ? (
+              <a className="resourceCard" href={resource.href} key={resource.title} target="_blank" rel="noreferrer"><span>{resource.label}</span><h3>{resource.title}</h3><p>{resource.copy}</p><b><ExternalLinkIcon /></b></a>
+            ) : (
+              <article className="resourceCard" key={resource.title}><span>{resource.label}</span><h3>{resource.title}</h3><p>{resource.copy}</p></article>
+            ))}
           </div>
           <div className="secondaryResources">
             {secondaryResources.map((resource) => <a href={resource.href} key={resource.title} target="_blank" rel="noreferrer"><strong>{resource.title}</strong><span>{resource.copy}</span><b><ExternalLinkIcon /></b></a>)}
@@ -110,11 +112,10 @@ export function LandingPage({ styleKey }: { styleKey: StyleKey }) {
 
         <section id="apply" className="section ctaSection">
           <div><p className="eyebrow">Casper Forward</p><h2>Built something promising on Casper? Keep going.</h2><p>Tell us what you’re building, where it stands and what would help you reach the next milestone.</p></div>
-          <Link className="button ctaButton" href={applyPathFor(styleKey)}>Apply to Casper Forward <ExternalLinkIcon /></Link>
+          <Link className="button ctaButton" href="/apply">Apply to Casper Forward <ExternalLinkIcon /></Link>
         </section>
       </main>
-      <Footer styleKey={styleKey} />
-      <StyleSwitcher active={styleKey} />
+      <Footer />
     </div>
   );
 }

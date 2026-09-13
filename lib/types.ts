@@ -14,5 +14,3 @@ export type Team = {
   x: string;
   featured: boolean;
 };
-
-export type StyleKey = "a" | "b" | "c" | "d";

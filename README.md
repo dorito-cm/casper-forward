@@ -1,44 +1,36 @@
-# Casper Forward prototype
+# Casper Forward
 
-A maintainable, multi-page Next.js/TypeScript prototype for Casper Forward. It includes one shared content and data layer, a public team directory, and four meaningfully different visual concepts.
+A multi-page Next.js and TypeScript site for the Casper Forward post-hackathon builder program.
 
 ## Run locally
 
-Requirements: Node.js 20.9 or newer.
+Requirements: Node.js 20.9 or newer and npm.
 
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000). For a production check:
+Open [http://localhost:3000](http://localhost:3000).
 
-```bash
-npm run build
-npm start
-```
+## Public routes
 
-## Routes and visual concepts
+- `/` — Casper Forward homepage
+- `/teams` — public team directory
+- `/apply` — Casper Forward application
 
-- `/` and `/style-a`: Casper Editorial (default)
-- `/style-b`: Builder / Technical
-- `/style-c`: Premium Dark
-- `/style-d`: Minimal Institutional
-- `/teams`: default public team directory
-- `/style-a/teams` through `/style-d/teams`: directory rendered in each concept
+The application page embeds the existing Google Form and includes a direct Google Forms fallback link. The form URLs are defined in `lib/application.ts`.
 
-All concepts use the same components and copy. Theme classes in `app/globals.css` provide their different design systems; they do not duplicate business logic.
+## Team data and logos
 
-## Team data
+`data/teams.json` is the single source of truth for both the homepage team preview and the full Teams directory. The current records are demo placeholders that can be replaced with approved project data without changing the data structure or page layout.
 
-[`data/teams.json`](data/teams.json) is the single source of truth for both the landing-page preview and full directories. The included records are deliberately labeled demo placeholders and must be replaced with approved participant data before launch.
+To add or update a team:
 
-To add or edit a team:
-
-1. Add its logo under `public/teams/<team-slug>/logo.svg` (PNG or WebP also work).
+1. Add its logo under `public/teams/<team-slug>/`.
 2. Add or update the corresponding object in `data/teams.json`.
 3. Use one supported status: `BUILDING`, `TESTNET`, `MAINNET PREP`, or `LIVE`.
-4. Set `featured` to `true` to make the project eligible for the landing-page preview. The first three featured records are shown.
+4. Set `featured` to `true` to make the project eligible for the homepage preview. The first three featured records are shown.
 5. Leave unavailable external-link values as empty strings.
 
 Public team records should never include private contacts, blocker notes, internal status, follow-up history, or CRM data.
@@ -46,13 +38,20 @@ Public team records should never include private contacts, blocker notes, intern
 ## Content and assets
 
 - Shared program copy, navigation, resources, journey, support, and eligibility: `lib/content.ts`
-- Shared types and supported statuses: `lib/types.ts`
+- Shared types and supported team statuses: `lib/types.ts`
 - Shared components: `components/`
 - Team logos: `public/teams/`
 - Support artwork: `public/images/support-hub.png`
 
-The FAQ, workspace, and application links remain safe placeholders until approved URLs are supplied.
+The Casper Forward FAQ card is intentionally non-clickable until Muhammet provides the final FAQ/resource URL. Once available, update the single `href` value for that resource in `lib/content.ts`.
+
+## Production build
+
+```bash
+npm run build
+npm start
+```
 
 ## Deploy to Vercel
 
-Import the repository into Vercel and accept the detected Next.js defaults. No environment variables or backend services are required. Vercel will run `npm run build` and deploy the application from the repository root.
+The current deployment assumption is Vercel using its detected Next.js defaults from the repository root. No environment variables or backend services are currently required. Vercel should install from the npm lockfile and run `npm run build`.
