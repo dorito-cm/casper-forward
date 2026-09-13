@@ -43,7 +43,7 @@ Public team records should never include private contacts, blocker notes, intern
 - Team logos: `public/teams/`
 - Support artwork: `public/images/support-hub.png`
 
-The Casper Forward FAQ card is intentionally non-clickable until Muhammet provides the final FAQ/resource URL. Once available, update the single `href` value for that resource in `lib/content.ts`.
+The Casper Forward FAQ card is intentionally non-clickable until the final FAQ/resource URL is provided. Once available, update the single `href` value for that resource in `lib/content.ts`.
 
 ## Production build
 
