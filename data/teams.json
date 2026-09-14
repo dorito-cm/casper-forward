@@ -6,9 +6,9 @@
     "description": "Placeholder project profile demonstrating the public team-card layout.",
     "status": "BUILDING",
     "latestMilestone": "Demo milestone — replace before launch",
-    "website": "linkhere",
-    "github": "github here",
-    "x": "X here",
+    "website": "",
+    "github": "",
+    "x": "",
     "featured": true
   },
   {
@@ -18,9 +18,9 @@
     "description": "Placeholder project profile demonstrating the public team-card layout.",
     "status": "TESTNET",
     "latestMilestone": "Demo milestone — replace before launch",
-    "website": "https://x.com/dorito_cm",
-    "github": "https://x.com/dorito_cm",
-    "x": "https://x.com/dorito_cm",
+    "website": "",
+    "github": "",
+    "x": "",
     "featured": true
   },
   {
