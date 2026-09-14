@@ -2,8 +2,6 @@
 
 This document contains the current public-facing Casper Forward website copy, organized by section for review and handoff.
 
-Styles A, B, C, and D use identical written copy. Style B additionally displays the visual motif “01 → ∞” in the continuation statement.
-
 ## Navigation
 
 Casper Forward
@@ -30,8 +28,6 @@ Casper Forward helps promising builders move from hackathon prototype to product
 **Secondary CTA:** See how it works ↓
 
 ### Continuation statement
-
-**Style B visual motif:** 01 → ∞
 
 **Label:** BUILT FOR CONTINUATION
 
@@ -216,11 +212,13 @@ Official Casper protocol, SDK, smart-contract and development documentation.
 
 Casper’s AI Toolkit, agent tooling, MCP resources and x402 development material.
 
-### PARTICIPANTS
+### DEVELOPERS
 
-**Program Workspace**
+**Casper Developer Community**
 
-The support and coordination space for participating Casper Forward teams.
+Communication and cooperation group for developers building on Casper Network.
+
+https://t.me/CSPRDevelopers
 
 ### Secondary resources
 
