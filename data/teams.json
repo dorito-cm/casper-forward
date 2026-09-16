@@ -46,5 +46,77 @@
     "github": "https://github.com/HoomanBuilds/claros",
     "x": "",
     "featured": true
+  },
+  {
+    "name": "ATLAS",
+    "slug": "atlas",
+    "logo": "/teams/atlas/logo.png",
+    "description": "Atlas is a non-custodial AI treasury agent on Casper that researches DeFi opportunities, buys verifiable risk data over x402, and proposes real trades for users to sign.",
+    "status": "TESTNET",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://atlas.77-37-54-173.nip.io/",
+    "github": "https://github.com/mertksk/atlas-agent",
+    "x": "https://x.com/Mert1912ksk",
+    "featured": false
+  },
+  {
+    "name": "AgentEscrow402",
+    "slug": "agentescrow402",
+    "logo": "/teams/agentescrow402/logo.png",
+    "description": "AgentEscrow402 provides trustless payment infrastructure for AI agent commerce using on-chain Casper smart-contract escrows with auditable settlement and dispute handling.",
+    "status": "TESTNET",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://ae402.xyz/",
+    "github": "https://github.com/alexbelij/AgentEscrow402",
+    "x": "https://x.com/alexbelij",
+    "featured": false
+  },
+  {
+    "name": "Casper Trust Layer",
+    "slug": "casper-trust-layer",
+    "logo": "/teams/casper-trust-layer/logo.png",
+    "description": "Casper Trust Layer gives AI agents on-chain spending limits and counterparty trust rules, using reputation earned from settled payments to control who an agent may pay.",
+    "status": "TESTNET",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://casper-trust-layer.vercel.app/",
+    "github": "https://github.com/Bekirerdem/casper-trust-layer",
+    "x": "https://x.com/l3ekirerdem",
+    "featured": false
+  },
+  {
+    "name": "Sluice",
+    "slug": "sluice",
+    "logo": "/teams/sluice/logo.png",
+    "description": "Sluice is a streaming x402 meter for the agent economy, letting agents rent continuous resources and pay per second on Casper while access stops when payment stops.",
+    "status": "LIVE",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://risingtell.github.io/sluice",
+    "github": "https://github.com/Risingtell/sluice",
+    "x": "https://x.com/agentsluice",
+    "featured": false
+  },
+  {
+    "name": "Lastre",
+    "slug": "lastre",
+    "logo": "/teams/lastre/logo.png",
+    "description": "Lastre is an origin trust layer for real-world assets on Casper, using deterministic seals to verify origin before tokenization or finance and anchoring the result on-chain.",
+    "status": "TESTNET",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://lastre.io/",
+    "github": "https://github.com/FelixRodrigues007/lastre",
+    "x": "https://x.com/ogeneralrock",
+    "featured": false
+  },
+  {
+    "name": "ARIA",
+    "slug": "aria",
+    "logo": "/teams/aria/logo.png",
+    "description": "ARIA is an autonomous RWA underwriting and liquidity protocol on Casper, using an AI council to analyze invoices, vote on-chain, mint collateralized assets, and route DeFi capital.",
+    "status": "TESTNET",
+    "latestMilestone": "3rd Place — Casper Agentic Buildathon 2026",
+    "website": "https://aria-rwa.vercel.app/",
+    "github": "https://github.com/ChiJian28/ARIA",
+    "x": "https://x.com/ChIJiAn28",
+    "featured": false
   }
 ]
