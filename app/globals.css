@@ -32,7 +32,7 @@ button { font: inherit; }
 
 .hero, .section, .directoryHero, .directorySection, .footerInner { width: min(var(--max), calc(100% - 48px)); margin-inline: auto; }
 .hero { min-height: 680px; padding-block: clamp(88px, 10vw, 142px) 90px; position: relative; display: flex; align-items: center; }
-.heroGrid { width: 100%; display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(270px, .6fr); align-items: end; gap: clamp(45px, 7vw, 100px); }
+.heroGrid { width: 100%; display: grid; grid-template-columns: 1fr; }
 .heroMain { position: relative; z-index: 1; }
 .pill { display: inline-flex; align-items: center; gap: 9px; margin: 0; padding: 8px 12px; border: 1px solid var(--line); border-radius: 99px; background: color-mix(in srgb, var(--surface) 62%, transparent); color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
 .pill span { width: 7px; height: 7px; border-radius: 50%; background: var(--red); }
@@ -40,9 +40,6 @@ button { font: inherit; }
 .hero h1 em, .directoryHero h1 em { color: var(--red); font-style: normal; }
 .heroCopy { max-width: 770px; margin: 0; color: var(--muted); font-size: clamp(18px, 2vw, 22px); line-height: 1.55; }
 .heroActions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 34px; }
-.heroAside { padding: 0 0 8px 28px; border-left: 1px solid var(--line); }
-.heroAside > p:last-child { margin: 12px 0 0; font-size: 17px; line-height: 1.55; }
-.continuationMotif { display: none; }
 .eyebrow { margin: 0 0 16px; color: var(--red); font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .heroDecoration { position: absolute; width: 480px; height: 480px; right: -100px; top: -120px; border-radius: 50%; opacity: .33; background: radial-gradient(circle at 35% 55%, color-mix(in srgb, var(--red) 40%, transparent), transparent 42%), radial-gradient(circle at 70% 35%, color-mix(in srgb, var(--purple) 38%, transparent), transparent 48%); filter: blur(20px); }
 .heroDecoration span { display: none; }
@@ -75,10 +72,7 @@ button { font: inherit; }
 .supportGrid article { min-height: 210px; padding: 27px; display: flex; flex-direction: column; justify-content: center; background: var(--surface); }
 .supportGrid h3 { margin: 12px 0 10px; font-size: 21px; line-height: 1.2; letter-spacing: -.025em; }
 .supportGrid p { margin: 0; color: var(--muted); font-size: 15px; line-height: 1.55; }
-.supportVisual { min-height: 635px; display: grid; grid-template-rows: auto 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #f3f1f0; }
-.quoteBlock { padding: 32px 32px 18px; }
-.quoteBlock blockquote { margin: 0; font-size: clamp(24px, 2.5vw, 34px); line-height: 1.08; letter-spacing: -.04em; }
-.quoteBlock p { margin: 16px 0 0; color: var(--muted); font-size: 11px; font-weight: 800; letter-spacing: .1em; text-transform: uppercase; }
+.supportVisual { min-height: 635px; display: grid; grid-template-rows: 1fr; overflow: hidden; border: 1px solid var(--line); border-radius: var(--radius); background: #f3f1f0; }
 .supportImage { min-height: 0; position: relative; overflow: hidden; }
 .supportImage img { width: 100%; height: 100%; object-fit: cover; object-position: center 48%; display: block; }
 
@@ -177,13 +171,11 @@ button { font: inherit; }
 .theme .directoryHero h1 { font-weight: 300; }
 .theme .sectionHeading h2,
 .theme .ctaSection h2 { font-weight: 400; line-height: 1.1; letter-spacing: .02em; }
-.theme .quoteBlock blockquote { line-height: 1.18; letter-spacing: 0; }
 .theme .journeyGrid h3 { letter-spacing: .02em; }
 .theme .brandMark { border-radius: 2px; font-weight: 500; }
 .theme .mainNav { font-size: 14px; }
 .theme .button { min-height: 50px; border-radius: 2px; font-size: 14px; letter-spacing: .01em; }
 .theme .sectionIntro { font-size: 19px; }
-.theme .heroAside > p:last-child { font-size: 18px; }
 .theme .reasonCard div p,
 .theme .supportGrid p { font-size: 17px; }
 .theme .journeyGrid p,
@@ -238,7 +230,6 @@ button { font: inherit; }
   .mainNav { display: none; position: absolute; top: 75px; left: 24px; right: 24px; padding: 20px; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: 0 20px 50px rgb(0 0 0 / 12%); }
   .mainNav.isOpen { display: flex; }.mainNav a { padding: 13px 8px; }.menuButton { display: block; }.navApply { margin-left: 0; }
   .heroGrid, .sectionHeading { grid-template-columns: 1fr; }
-  .heroAside { max-width: 700px; }
   .journeyGrid { grid-template-columns: repeat(3, 1fr); }.journeyGrid li { border-bottom: 1px solid #36383e; }.journeyGrid li:nth-child(3) { border-right: 0; }.journeyGrid li:nth-last-child(-n+2) { border-bottom: 0; }
   .supportLayout { grid-template-columns: 1fr; }.supportVisual { min-height: 680px; }
   .resourceGrid { grid-template-columns: repeat(2, 1fr); }.resourceCard { min-height: 230px; }.teamGrid, .directoryGrid { grid-template-columns: repeat(2, 1fr); }
@@ -247,14 +238,14 @@ button { font: inherit; }
 
 @media (max-width: 700px) {
   .navShell, .hero, .section, .directoryHero, .directorySection, .footerInner { width: min(100% - 30px, var(--max)); }.navShell { height: 68px; }.navApply { display: none; }.mainNav { top: 67px; left: 15px; right: 15px; }
-  .hero { min-height: auto; padding-block: 72px 60px; }.hero h1, .directoryHero h1 { font-size: clamp(56px, 18vw, 78px); }.heroCopy { font-size: 17px; }.heroAside { margin-top: 15px; }
+  .hero { min-height: auto; padding-block: 72px 60px; }.hero h1, .directoryHero h1 { font-size: clamp(56px, 18vw, 78px); }.heroCopy { font-size: 17px; }
   .theme .heroDecoration { width: 360px; height: 320px; top: -150px; right: -145px; opacity: .16; background: radial-gradient(ellipse 58% 48% at 78% 18%, color-mix(in srgb, var(--red) 48%, var(--purple)), color-mix(in srgb, var(--purple) 16%, transparent) 52%, transparent 78%); filter: blur(14px); }
   .signalRail { justify-content: flex-start; overflow-x: auto; padding-inline: 15px; scrollbar-width: none; }.signalRail::-webkit-scrollbar { display: none; }
   .section { padding-block: 72px; }.sectionHeading { gap: 22px; margin-bottom: 38px; }.sectionHeading h2, .ctaSection h2 { font-size: 42px; }.sectionIntro { font-size: 15px; }
   .reasonGrid, .teamGrid, .directoryGrid, .resourceGrid, .eligibilityGrid, .supportGrid, .secondaryResources, .journeyGrid { grid-template-columns: 1fr; }
   .reasonCard { min-height: 0; gap: 30px; }
   .journeySection { width: 100%; padding-inline: 15px; }.journeyGrid li, .journeyGrid li:nth-child(3), .journeyGrid li:nth-last-child(-n+2) { min-height: 210px; border-right: 0; border-bottom: 1px solid #36383e; }.journeyGrid li:last-child { border-bottom: 0; }
-  .supportGrid { grid-template-rows: none; }.supportGrid article { min-height: 190px; }.supportVisual { min-height: 630px; }.quoteBlock { padding: 28px 25px 15px; }.supportImage { min-height: 390px; }
+  .supportGrid { grid-template-rows: none; }.supportGrid article { min-height: 190px; }.supportVisual { min-height: 390px; }.supportImage { min-height: 390px; }
   .teamCard { min-height: 370px; }.resourceGrid { gap: 12px; }.resourceCard { min-height: 230px; }.secondaryResources { border: 0; }.secondaryResources a, .secondaryResources a:last-child { border: 1px solid var(--line); border-bottom: 0; }.secondaryResources a:last-child { border-bottom: 1px solid var(--line); }
   .eligibilityGrid article { padding: 26px; }.ctaSection { width: calc(100% - 30px); margin-bottom: 70px; padding: 32px 25px; flex-direction: column; align-items: flex-start; }.ctaButton { width: 100%; }
   .theme .ctaSection { margin-bottom: 60px; }
