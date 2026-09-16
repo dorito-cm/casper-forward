@@ -31,7 +31,7 @@ export const supportAreas = [
 ];
 
 export const primaryResources = [
-  { label: "FIRST LINE", title: "Casper Forward FAQ", copy: "Common program, onboarding and technical questions for participating teams.", href: "" },
+  { label: "FIRST LINE", title: "Casper Forward FAQ", copy: "Program and onboarding guidance coming soon.", href: "" },
   { label: "DOCUMENTATION", title: "Casper Developer Docs", copy: "Official Casper protocol, SDK, smart-contract and development documentation.", href: "https://docs.casper.network/" },
   { label: "AI TOOLING", title: "AI & x402 Tooling", copy: "Casper’s AI Toolkit, agent tooling, MCP resources and x402 development material.", href: "https://www.casper.network/ai" },
   { label: "DEVELOPERS", title: "Casper Developer Community", copy: "Communication and cooperation group for developers building on Casper Network.", href: "https://t.me/CSPRDevelopers" },

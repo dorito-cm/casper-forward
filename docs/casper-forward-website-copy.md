@@ -186,7 +186,7 @@ Key documentation, development tools, and program resources for Casper Forward t
 
 **Casper Forward FAQ**
 
-Common program, onboarding and technical questions for participating teams.
+Program and onboarding guidance coming soon.
 
 ### DOCUMENTATION
 
