@@ -2,8 +2,6 @@
 
 This document contains the current public-facing Casper Forward website copy, organized by section for review and handoff.
 
-Styles A, B, C, and D use identical written copy. Style B additionally displays the visual motif “01 → ∞” in the continuation statement.
-
 ## Navigation
 
 Casper Forward
@@ -23,19 +21,11 @@ Casper Forward
 
 **Headline:** Keep Building.
 
-Casper Forward helps promising builders move from hackathon prototype to production on Casper — with continued technical, ecosystem and go-to-market support along the way.
+Casper Forward helps promising builders move from a hackathon prototype to production on Casper, with continued technical, ecosystem, and go-to-market support.
 
 **Primary CTA:** Apply to Casper Forward ↗
 
-**Secondary CTA:** See how it works ↓
-
-### Continuation statement
-
-**Style B visual motif:** 01 → ∞
-
-**Label:** BUILT FOR CONTINUATION
-
-No forced graduation dates. No one-size-fits-all roadmap. Teams progress around the needs and pace of the product they’re actually building.
+**Secondary CTA:** Explore the Program ↓
 
 ### Program themes
 
@@ -49,9 +39,9 @@ No forced graduation dates. No one-size-fits-all roadmap. Teams progress around 
 
 **Section label:** WHY CASPER FORWARD
 
-**Headline:** Hackathons should be a start, not an ending.
+**Headline:** The buildathon *is* the beginning.
 
-A working prototype is only the beginning. Technical blockers, product decisions, infrastructure needs and launch preparation can all slow promising teams down after an event ends. Casper Forward keeps serious builders connected while they work through what comes next.
+We enjoyed building with you; now let’s see what we can make of it. Think of the Buildathon as our introduction, and Casper Forward is where we keep working together to build the best possible version of your project.
 
 ### 01 / CONTINUE
 
@@ -75,9 +65,9 @@ Turn a promising build into something ready for Mainnet, users and continued dev
 
 **Section label:** BUILDER JOURNEY
 
-**Headline:** A clear path forward.
+**Headline:** The Path to Mainnet
 
-Every project is different. Progress is based on readiness and the next useful milestone — not a fixed cohort schedule.
+Each team starts from where its project stands today. Together, we identify the priorities and milestones that can move it closer to production.
 
 ### 01 Apply
 
@@ -103,9 +93,9 @@ Deploy when ready, reach users and stay connected as the product evolves.
 
 **Section label:** PROGRAM SUPPORT
 
-**Headline:** Support where it actually matters.
+**Headline:** What you can access through Casper Forward
 
-Casper Forward brings the right people and resources closer to the problems teams encounter while turning a prototype into a real product.
+Casper Forward connects participating teams with technical expertise, ecosystem resources, and launch support throughout their development.
 
 ### BUILD
 
@@ -143,19 +133,13 @@ Support around RPC access, indexing, testing and other production dependencies.
 
 A consistent place to surface blockers, share progress and stay connected between milestones.
 
-### Support statement
-
-“The goal isn’t to rush every prototype to Mainnet. It’s to help serious teams keep moving.”
-
-Casper Forward
-
 ## Teams Moving Forward
 
 **Section label:** TEAMS MOVING FORWARD
 
-**Headline:** Built on Casper. Still building.
+**Headline:** Meet the builders.
 
-A public view of participating projects and the milestones they choose to share as they keep moving.
+Follow participating projects as they develop, reach new milestones, and bring their products closer to Mainnet.
 
 **CTA:** Explore all teams →
 
@@ -196,13 +180,13 @@ Explore participating Casper Forward projects and the public milestones they’r
 
 **Headline:** Everything closer to hand.
 
-A focused starting point for recurring questions, core documentation, builder tooling and program coordination.
+Key documentation, development tools, and program resources for Casper Forward teams.
 
 ### FIRST LINE
 
 **Casper Forward FAQ**
 
-Common program, onboarding and technical questions for participating teams.
+Program and onboarding guidance coming soon.
 
 ### DOCUMENTATION
 
@@ -216,11 +200,13 @@ Official Casper protocol, SDK, smart-contract and development documentation.
 
 Casper’s AI Toolkit, agent tooling, MCP resources and x402 development material.
 
-### PARTICIPANTS
+### DEVELOPERS
 
-**Program Workspace**
+**Casper Developer Community**
 
-The support and coordination space for participating Casper Forward teams.
+Communication and cooperation group for developers building on Casper Network.
+
+https://t.me/CSPRDevelopers
 
 ### Secondary resources
 
@@ -237,9 +223,9 @@ The support and coordination space for participating Casper Forward teams.
 
 **Section label:** ELIGIBILITY
 
-**Headline:** For teams that intend to keep going.
+**Headline:** For selected teams ready to take their projects further.
 
-Casper Forward is designed for projects showing meaningful progress and a clear intention to continue building on Casper.
+Casper Forward is designed for projects that have demonstrated meaningful progress and have a clear plan to continue developing on Casper.
 
 ### Who is it for?
 
@@ -260,9 +246,9 @@ Casper Forward is designed for projects showing meaningful progress and a clear 
 
 **Section label:** CASPER FORWARD
 
-**Headline:** Built something promising on Casper? Keep going.
+**Headline:** Where could your project go next?
 
-Tell us what you’re building, where it stands and what would help you reach the next milestone.
+Tell us what you’ve built, where it stands, and what you want to achieve next.
 
 **CTA:** Apply to Casper Forward ↗
 

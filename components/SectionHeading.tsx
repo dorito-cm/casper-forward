@@ -1,4 +1,6 @@
-export function SectionHeading({ eyebrow, title, intro }: { eyebrow: string; title: string; intro: string }) {
+import type { ReactNode } from "react";
+
+export function SectionHeading({ eyebrow, title, intro }: { eyebrow: string; title: ReactNode; intro: string }) {
   return (
     <div className="sectionHeading">
       <div>

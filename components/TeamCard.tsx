@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { Team } from "@/lib/types";
+import { ExternalLinkIcon } from "./ExternalLinkIcon";
 
 const linkLabels: Array<[keyof Pick<Team, "website" | "github" | "x">, string]> = [
   ["website", "Website"], ["github", "GitHub"], ["x", "X"],
@@ -22,7 +23,7 @@ export function TeamCard({ team }: { team: Team }) {
       </div>
       <div className="teamLinks" aria-label={`${team.name} links`}>
         {linkLabels.map(([key, label]) => team[key] ? (
-          <a key={key} href={team[key]} target="_blank" rel="noreferrer">{label} <span aria-hidden="true">↗</span></a>
+          <a key={key} href={team[key]} target="_blank" rel="noreferrer">{label} <ExternalLinkIcon /></a>
         ) : null)}
         {!team.website && !team.github && !team.x ? <span className="linksPending">Links coming soon</span> : null}
       </div>

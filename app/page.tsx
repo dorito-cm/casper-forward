@@ -1,2 +1,2 @@
 import { LandingPage } from "@/components/LandingPage";
-export default function Page() { return <LandingPage styleKey="a" />; }
+export default function Page() { return <LandingPage />; }
