@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { navItems } from "@/lib/content";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
@@ -17,8 +18,15 @@ export function Header() {
     <header className="siteHeader">
       <div className="navShell">
         <Link href="/" className="brand" aria-label="Casper Forward home">
-          <span className="brandMark" aria-hidden="true">C</span>
-          <span>Casper Forward</span>
+          <Image
+            className="brandLogo"
+            src="/brand/casper-forward-logo.svg"
+            alt="Casper Forward"
+            width={396}
+            height={60}
+            loading="eager"
+            unoptimized
+          />
         </Link>
         <button
           className="menuButton"
