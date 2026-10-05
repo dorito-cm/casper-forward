@@ -16,7 +16,11 @@ const casperSans = localFont({
 export const metadata: Metadata = {
   title: { default: "Casper Forward | Keep Building.", template: "%s | Casper Forward" },
   description: "Casper Forward helps promising builders move from hackathon prototype to production on Casper.",
-  metadataBase: new URL("https://forward.casper.network"),
+  metadataBase: new URL(
+    process.env.VERCEL_ENV === "preview" && process.env.VERCEL_URL
+      ? `https://${process.env.VERCEL_URL}`
+      : "https://forward.casper.network"
+  ),
   openGraph: {
     title: "Casper Forward | Keep Building.",
     description: "Casper Forward helps promising builders move from hackathon prototype to production on Casper.",
