@@ -5,7 +5,7 @@ export function Footer() {
     <footer className="footer">
       <div className="footerInner">
         <Link className="footerBrand" href="/">Casper Forward — Keep Building.</Link>
-        <p>Prototype to production, and onward.</p>
+        <p>Prototype to production — and onward.</p>
         <p>© {new Date().getFullYear()} Casper Forward</p>
       </div>
     </footer>
