@@ -166,5 +166,17 @@
   "github": "https://github.com/msanlisavas/chainleash",
   "x": "",
   "featured": false
+  },
+  {
+  "name": "LeaseFi",
+  "slug": "leasefi",
+  "logo": "/teams/leasefi/logo.jpg",
+  "description": "Records real estate related transaction settlements on Casper. Property listings, lease/ownership agreements, maintenance, and wallet-to-wallet payments in USD stablecoin. LeaseFi is an all-in-one RWA platform.",
+  "status": "TESTNET",
+  "latestMilestone": "8 Smart Contracts Deployed on Casper Testnet",
+  "website": "https://lease-fi.com/",
+  "github": "https://github.com/Dark-Knight2026",
+  "x": "https://x.com/KeyChain_BIG",
+  "featured": false
   }
 ]
