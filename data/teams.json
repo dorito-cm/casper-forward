@@ -118,5 +118,65 @@
     "github": "https://github.com/ChiJian28/ARIA",
     "x": "https://x.com/ChIJiAn28",
     "featured": false
+  },
+  {
+    "name": "Pico Casper",
+    "slug": "pico-casper",
+    "logo": "/teams/pico-casper/logo.png",
+    "description": "Pay-per-unlock links for creators: the same link takes one tap from a human or an x402 round trip from an AI agent, settled in native CSPR.",
+    "status": "TESTNET",
+    "latestMilestone": "Working Testnet Prototype — October 2026",
+    "website": "https://pico-payment-casper.vercel.app",
+    "github": "https://github.com/Gomathi1806/PICO_Payment_CASPER",
+    "x": "https://x.com/picocspr",
+    "featured": false
+  },
+  {
+    "name": "Silicon DNA × Phoenix Zero",
+    "slug": "silicon-dna-phoenix-zero",
+    "logo": "/teams/silicon-dna-phoenix-zero/logo.jpg",
+    "description": "Silicon DNA × Phoenix Zero is an execution oracle that helps AI agents assess network safety before transactions or payments, monitoring 12 networks including Casper Mainnet.",
+    "status": "BUILDING",
+    "latestMilestone": "Live Monitoring of 12 Networks, Including Casper Mainnet",
+    "website": "https://rtt.phoenix-ai.work",
+    "github": "https://github.com/kant19801201behax5/silicon-dna-release/tree/master/casper-agent",
+    "x": "https://x.com/aleks_arch",
+    "featured": false
+  },
+  {
+  "name": "Veridex Protocol",
+  "slug": "veridex-protocol",
+  "logo": "/teams/veridex-protocol/logo.png",
+  "description": "Veridex Protocol provides open-source infrastructure for secure AI agent payments and commerce, combining identity, spending controls, service discovery, and verifiable transactions across multiple blockchains.",
+  "status": "BUILDING",
+  "latestMilestone": "Trust Rail Integrated into Veridex Protocol",
+  "website": "https://www.veridex.network/",
+  "github": "https://github.com/Veridex-Protocol/",
+  "x": "https://x.com/veridex_labs",
+  "featured": false
+  },
+  {
+  "name": "Chainleash",
+  "slug": "chainleash",
+  "logo": "/teams/chainleash/logo.png",
+  "description": "Chainleash is an AI-powered CSPR staking agent that automates delegation and rebalancing under on-chain security rules, including validator allowlists, spending limits, and owner-controlled withdrawals.",
+  "status": "TESTNET",
+  "latestMilestone": "Live Testnet Staking Agent with On-Chain Safeguards",
+  "website": "https://chainleash.ekolsoft.com",
+  "github": "https://github.com/msanlisavas/chainleash",
+  "x": "",
+  "featured": false
+  },
+  {
+  "name": "LeaseFi",
+  "slug": "leasefi",
+  "logo": "/teams/leasefi/logo.jpg",
+  "description": "Records real estate related transaction settlements on Casper. Property listings, lease/ownership agreements, maintenance, and wallet-to-wallet payments in USD stablecoin. LeaseFi is an all-in-one RWA platform.",
+  "status": "TESTNET",
+  "latestMilestone": "8 Smart Contracts Deployed on Casper Testnet",
+  "website": "https://lease-fi.com/",
+  "github": "https://github.com/Dark-Knight2026",
+  "x": "https://x.com/KeyChain_BIG",
+  "featured": false
   }
 ]
