@@ -3,6 +3,7 @@ import Link from "next/link";
 import teamsData from "@/data/teams.json";
 import { eligibility, journey, primaryResources, reasons, secondaryResources, supportAreas } from "@/lib/content";
 import type { Team } from "@/lib/types";
+import { EcosystemPartners } from "./EcosystemPartners";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -78,6 +79,8 @@ export function LandingPage() {
           <div className="teamGrid">{featured.map((team) => <TeamCard team={team} key={team.slug} />)}</div>
           <div className="sectionAction"><Link className="button buttonSecondary" href="/teams">Explore all teams <span aria-hidden="true">→</span></Link></div>
         </section>
+
+        <EcosystemPartners />
 
         <section id="resources" className="section resourcesSection">
           <SectionHeading eyebrow="Builder Resources" title="Everything closer to hand." intro="Key documentation, development tools, and program resources for Casper Forward teams." />
