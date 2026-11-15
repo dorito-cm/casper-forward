@@ -126,7 +126,7 @@
     "description": "Pay-per-unlock links for creators: the same link takes one tap from a human or an x402 round trip from an AI agent, settled in native CSPR.",
     "status": "TESTNET",
     "latestMilestone": "Working Testnet Prototype — October 2026",
-    "website": "https://pico-payment-casper.vercel.app",
+    "website": "https://casper.picomicropay.nl/",
     "github": "https://github.com/Gomathi1806/PICO_Payment_CASPER",
     "x": "https://x.com/picocspr",
     "featured": false
@@ -177,6 +177,18 @@
   "website": "https://lease-fi.com/",
   "github": "https://github.com/Dark-Knight2026",
   "x": "https://x.com/KeyChain_BIG",
+  "featured": false
+  },
+  {
+  "name": "CasperID",
+  "slug": "casperid",
+  "logo": "/teams/casperid/logo.png",
+  "description": "CasperID is a decentralized identity and trust protocol built on the Casper Network. It enables users to create human-readable digital identities, verify themselves once, and securely reuse their credentials across multiple applications.",
+  "status": "BUILDING",
+  "latestMilestone": "Web Platform Launched and Developer Integration Tools Released",
+  "website": "https://www.casperid.com/",
+  "github": "https://github.com/luxipha/CasperID",
+  "x": "https://x.com/luxipha_dev",
   "featured": false
   }
 ]
