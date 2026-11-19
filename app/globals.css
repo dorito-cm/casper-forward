@@ -43,8 +43,6 @@ button { font: inherit; }
 .eyebrow { margin: 0 0 16px; color: var(--red); font-size: 11px; font-weight: 850; letter-spacing: .14em; text-transform: uppercase; }
 .heroDecoration { position: absolute; width: 480px; height: 480px; right: -100px; top: -120px; border-radius: 50%; opacity: .33; background: radial-gradient(circle at 35% 55%, color-mix(in srgb, var(--red) 40%, transparent), transparent 42%), radial-gradient(circle at 70% 35%, color-mix(in srgb, var(--purple) 38%, transparent), transparent 48%); filter: blur(20px); }
 .heroDecoration span { display: none; }
-.signalRail { background: var(--ink); color: #fff; padding: 18px max(24px, calc((100vw - var(--max)) / 2)); display: flex; gap: 38px; justify-content: space-between; overflow: hidden; white-space: nowrap; font-size: 11px; font-weight: 800; letter-spacing: .12em; text-transform: uppercase; }
-.signalRail span::before { content: "✦"; margin-right: 36px; color: var(--red); }
 
 .section { padding-block: clamp(78px, 9vw, 120px); scroll-margin-top: 72px; }
 .sectionHeading { display: grid; grid-template-columns: minmax(0, 1.05fr) minmax(300px, .75fr); align-items: end; gap: clamp(40px, 7vw, 100px); margin-bottom: 54px; }
@@ -152,7 +150,6 @@ button { font: inherit; }
 .theme .button,
 .theme .pill,
 .theme .eyebrow,
-.theme .signalRail,
 .theme .cardIndex,
 .theme .stepNumber,
 .theme .supportGrid article > span,
@@ -167,7 +164,6 @@ button { font: inherit; }
 .theme strong { font-weight: 500; }
 .theme .eyebrow,
 .theme .pill,
-.theme .signalRail,
 .theme .cardIndex,
 .theme .supportGrid article > span,
 .theme .resourceCard > span { font-size: 11px; font-weight: 500; line-height: 14px; letter-spacing: 1px; }
@@ -199,8 +195,6 @@ button { font: inherit; }
 .theme .navApply { min-height: 42px; }
 .theme .pill { border-radius: 2px; border-color: var(--ink); background: transparent; }
 .theme .pill span { border-radius: 0; background: var(--lime); }
-.theme .signalRail { border-block: 1px solid var(--ink); }
-.theme .signalRail span::before { color: var(--lime); }
 .theme .journeySection { background: var(--ink); }
 .theme .stepNumber { color: var(--lime); }
 .theme .reasonCard,
@@ -233,6 +227,26 @@ button { font: inherit; }
 .theme .directoryHero { padding-block: clamp(82px, 9vw, 124px) 62px; }
 .theme .directorySection { padding-bottom: 105px; }
 
+/* Ecosystem partners */
+.ecosystemPartners { --partner-line: color-mix(in srgb, var(--line) 22%, var(--ink)); background: var(--ink); color: var(--surface); scroll-margin-top: 72px; }
+.ecosystemPartners .partnersInner { padding-block: 40px 32px; }
+.ecosystemPartners .partnersHeading { margin-bottom: 24px; }
+.ecosystemPartners .eyebrow { color: var(--lime); margin-bottom: 12px; }
+.ecosystemPartners h2 { margin: 0; max-width: 800px; font-size: clamp(28px, 3vw, 40px); font-weight: 400; line-height: 1.15; letter-spacing: .02em; }
+.ecosystemPartners .partnersGrid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--partner-line); }
+.ecosystemPartners .partnersGrid > li { min-width: 0; }
+.ecosystemPartners .partnersGrid > li + li { border-left: 1px solid var(--partner-line); }
+.ecosystemPartners .partnerLink { display: grid; place-items: center; min-width: 0; min-height: 104px; height: 100%; padding: 16px; }
+.ecosystemPartners .partnerLink:focus-visible { outline-offset: -4px; }
+.ecosystemPartners .partnerLogoFrame { position: relative; width: min(184px, 100%); height: 48px; }
+.ecosystemPartners .partnerLogoFrame img { object-fit: contain; object-position: center; }
+.ecosystemPartners .partnerLogo--allium { filter: brightness(0) invert(1); }
+
+@media (max-width: 900px) {
+  .ecosystemPartners .partnersGrid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .ecosystemPartners .partnersGrid > li:nth-child(odd) { border-left: 0; }
+  .ecosystemPartners .partnersGrid > li:nth-child(n+3) { border-top: 1px solid var(--partner-line); }
+}
 
 @media (max-width: 1050px) {
   .mainNav { display: none; position: absolute; top: 75px; left: 24px; right: 24px; padding: 20px; flex-direction: column; align-items: stretch; gap: 0; border: 1px solid var(--line); border-radius: 16px; background: var(--paper); box-shadow: 0 20px 50px rgb(0 0 0 / 12%); }
@@ -245,11 +259,12 @@ button { font: inherit; }
 }
 
 @media (max-width: 700px) {
+  .ecosystemPartners .partnersInner { padding-block: 32px 24px; }
+  .ecosystemPartners .partnerLink { min-height: 88px; padding: 12px; }
   .brandLogo { width: clamp(120px, calc(100vw - 104px), 180px); }
   .navShell, .hero, .section, .directoryHero, .directorySection, .footerInner { width: min(100% - 30px, var(--max)); }.navShell { height: 68px; }.navApply { display: none; }.mainNav { top: 67px; left: 15px; right: 15px; }
   .hero { min-height: auto; padding-block: 72px 60px; }.hero h1, .directoryHero h1 { font-size: clamp(56px, 18vw, 78px); }.heroCopy { font-size: 17px; }
   .theme .heroDecoration { width: 360px; height: 320px; top: -150px; right: -145px; opacity: .16; background: radial-gradient(ellipse 58% 48% at 78% 18%, color-mix(in srgb, var(--red) 48%, var(--purple)), color-mix(in srgb, var(--purple) 16%, transparent) 52%, transparent 78%); filter: blur(14px); }
-  .signalRail { justify-content: flex-start; overflow-x: auto; padding-inline: 15px; scrollbar-width: none; }.signalRail::-webkit-scrollbar { display: none; }
   .section { padding-block: 72px; }.sectionHeading { gap: 22px; margin-bottom: 38px; }.sectionHeading h2, .ctaSection h2 { font-size: 42px; }.sectionIntro { font-size: 15px; }
   .reasonGrid, .teamGrid, .directoryGrid, .resourceGrid, .eligibilityGrid, .supportGrid, .secondaryResources, .journeyGrid { grid-template-columns: 1fr; }
   .reasonCard { min-height: 0; gap: 30px; }

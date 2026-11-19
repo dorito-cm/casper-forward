@@ -3,6 +3,7 @@ import Link from "next/link";
 import teamsData from "@/data/teams.json";
 import { eligibility, journey, primaryResources, reasons, secondaryResources, supportAreas } from "@/lib/content";
 import type { Team } from "@/lib/types";
+import { EcosystemPartners } from "./EcosystemPartners";
 import { ExternalLinkIcon } from "./ExternalLinkIcon";
 import { Footer } from "./Footer";
 import { Header } from "./Header";
@@ -33,9 +34,7 @@ export function LandingPage() {
           </div>
         </section>
 
-        <div className="signalRail" aria-label="Program themes">
-          {["Prototype → Production", "Technical Support", "Ecosystem Access", "GTM & Launch", "Mainnet Readiness"].map((item) => <span key={item}>{item}</span>)}
-        </div>
+        <EcosystemPartners />
 
         <section id="program" className="section">
           <SectionHeading eyebrow="Why Casper Forward" title={<>The buildathon <em style={{ fontSynthesis: "style" }}>is</em> the beginning.</>} intro="We enjoyed building with you; now let’s see what we can make of it. Think of the Buildathon as our introduction, and Casper Forward is where we keep working together to build the best possible version of your project." />
