@@ -28,7 +28,7 @@
     "slug": "cascet",
     "logo": "/teams/cascet/logo.png",
     "description": "CasCet turns MCP servers into paid services with x402 micropayments on Casper, including composable multi-hop agent-to-agent payment chains.",
-    "status": "LIVE",
+    "status": "MAINNET PREP",
     "latestMilestone": "2nd Place — Casper Agentic Buildathon 2026",
     "website": "https://cascet.vercel.app/",
     "github": "https://github.com/mericcintosun/CasCet",
@@ -125,8 +125,8 @@
     "logo": "/teams/pico-casper/logo.png",
     "description": "Pay-per-unlock links for creators: the same link takes one tap from a human or an x402 round trip from an AI agent, settled in native CSPR.",
     "status": "TESTNET",
-    "latestMilestone": "Working Testnet Prototype — October 2026",
-    "website": "https://pico-payment-casper.vercel.app",
+    "latestMilestone": "Cross-Project x402 Payments Tested with Sluice and CasCet",
+    "website": "https://casper.picomicropay.nl/",
     "github": "https://github.com/Gomathi1806/PICO_Payment_CASPER",
     "x": "https://x.com/picocspr",
     "featured": false
@@ -177,6 +177,54 @@
   "website": "https://lease-fi.com/",
   "github": "https://github.com/Dark-Knight2026",
   "x": "https://x.com/KeyChain_BIG",
+  "featured": false
+  },
+  {
+  "name": "CasperID",
+  "slug": "casperid",
+  "logo": "/teams/casperid/logo.png",
+  "description": "CasperID is a decentralized identity and trust protocol built on the Casper Network. It enables users to create human-readable digital identities, verify themselves once, and securely reuse their credentials across multiple applications.",
+  "status": "BUILDING",
+  "latestMilestone": "Web Platform Launched and Developer Integration Tools Released",
+  "website": "https://www.casperid.com/",
+  "github": "https://github.com/luxipha/CasperID",
+  "x": "https://x.com/luxipha_dev",
+  "featured": false
+  },
+  {
+  "name": "Trappist.land",
+  "slug": "trappistland",
+  "logo": "/teams/trappistland/logo.jpg",
+  "description": "TrappistAI is a multimodal AI generator on the Casper blockchain. It creates images, music, 3D models, video and speech, and agents can pay per call in CSPR through the x402 protocol.",
+  "status": "LIVE",
+  "latestMilestone": "Piranewz x402 Payments and CSPR Burning Live",
+  "website": "https://trappist.land/",
+  "github": "https://github.com/UnrealNFT/TrappistAI",
+  "x": "https://x.com/Trappistland",
+  "featured": false
+  },
+  {
+  "name": "Hunch",
+  "slug": "hunch",
+  "logo": "/teams/hunch/logo.jpg",
+  "description": "AI-driven prediction markets on Casper, where autonomous agents create markets, place bets through x402/MCP, and settle outcomes through an arbiter agent with its on-chain reputation at stake. Humans can participate alongside the agents.",
+  "status": "BUILDING",
+  "latestMilestone": "AI-Agent Prediction Market Demo Launched",
+  "website": "https://casper.playhunch.xyz",
+  "github": "https://github.com/rajkaria/hunch-casper",
+  "x": "https://x.com/playhunchxyz",
+  "featured": false
+  },
+  {
+  "name": "GuildNet",
+  "slug": "guildnet",
+  "logo": "/teams/guildnet/logo.jpg",
+  "description": "RWA oracle agent network providing on-chain identity and reputation for autonomous AI agents, with discovery, hiring, and x402 payments.",
+  "status": "TESTNET",
+  "latestMilestone": "Autonomous Agent Payments and Reputation Running on Testnet",
+  "website": "https://guildnet.vercel.app",
+  "github": "https://github.com/The3Guild/GuildNet",
+  "x": "https://x.com/GuildNet_",
   "featured": false
   }
 ]
